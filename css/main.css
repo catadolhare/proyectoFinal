@@ -37,8 +37,8 @@ h2{
     font-family: 'Archivo Narrow', sans-serif;
     font-size: 30px;
 }
-.album{
-    width: 60%;
+.eleccion{
+    width: 65%;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -54,11 +54,13 @@ h2{
 }
 .info li h2{
     font-family: 'Open Sans', sans-serif;
-    text-decoration: none;
     color: black;
 }
 .info li p{
     font-family: 'Open Sans', sans-serif;
-    text-decoration: none;
     color: black;
+}
+.eleccion :hover{
+    background-color: rgb(247, 164, 134);
+    padding: 2%;
 }

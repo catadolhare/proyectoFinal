@@ -113,18 +113,18 @@ h3 a :hover{
         width: 50%;
     }
     h1{
-        font-size: 150px;
+        font-size: 120px;
     }
     h2{
-        font-size: 58px;
+        font-size: 45px;
     }
     h3{
-        font-size: 35px;
+        font-size: 30px;
     }
     .informacionAlbum p{
-        font-size: 25px;
+        font-size: 22px;
     }
     .canciones li{
-        font-size: 25px;
+        font-size: 22px;
     }
 }

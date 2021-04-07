@@ -8,7 +8,7 @@ img{
 }
 .container{
     width: 100%;
-    background-color: rgb(207, 206, 206);
+    background-color: rgb(236, 235, 235);
 }
 .encabezado{
     background-color: 250 147 112;
@@ -38,3 +38,58 @@ img{
     flex-direction: column;
     align-items: center;
 }
+.opcionesPlaylist li a:hover{
+    text-decoration: underline;
+    background-color: rgb(255, 187, 0);
+    color: darkblue;
+}
+h1{
+    font-size: 65px;
+    font-family: 'Bebas Neue', cursive;
+}
+h2{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 25px;
+}
+h2 a{
+    color: black;
+    text-decoration: none;
+}
+h2 a :hover{
+    text-decoration: underline;
+    color: darkblue;
+}
+h3{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+}
+h3 a{
+    color: black;
+    text-decoration: none;
+}
+h3 a :hover{
+    text-decoration: underline;
+    color: darkblue;
+}
+.informacionAlbum{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+.informacionAlbum p{
+    font-family: 'Lato', sans-serif;
+}
+.canciones li{
+    list-style: none;
+}
+.canciones li a{
+    font-family: 'Lato', sans-serif;
+    text-decoration: none;
+    color: black;
+}
+.canciones li a :hover{
+    text-decoration: underline;
+    color: darkblue;
+}
+

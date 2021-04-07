@@ -16,6 +16,11 @@ img{
     flex-wrap: wrap;
     justify-content: space-between;
 }
+.principal{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
 .album{
     display: flex;
     flex-wrap: wrap;
@@ -93,3 +98,33 @@ h3 a :hover{
     color: darkblue;
 }
 
+@media(min-width: 1024px){
+    .principal{
+        flex-direction: row;
+    }
+    .album{
+        flex-direction: column;
+        width: 50%;
+    }
+    .foto{
+        width: 100%;
+    }
+    .informacionAlbum{
+        width: 50%;
+    }
+    h1{
+        font-size: 150px;
+    }
+    h2{
+        font-size: 58px;
+    }
+    h3{
+        font-size: 35px;
+    }
+    .informacionAlbum p{
+        font-size: 25px;
+    }
+    .canciones li{
+        font-size: 25px;
+    }
+}

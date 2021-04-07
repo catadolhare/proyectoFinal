@@ -11,7 +11,7 @@ img{
     background-color: rgb(236, 235, 235);
 }
 .encabezado{
-    background-color: 250 147 112;
+    background-color: rgb(250 147 112);
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;

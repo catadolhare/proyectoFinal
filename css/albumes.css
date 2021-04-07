@@ -20,7 +20,21 @@ img{
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    justify-content: space-around;
 }
 .foto{
     width: 50%;
+}
+.opcionesPlaylist{
+    list-style: none;
+}
+.opcionesPlaylist li a{
+    text-decoration: none;
+    background-color:rgb(243, 143, 126);
+    color:rgb(252, 232, 232);
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }

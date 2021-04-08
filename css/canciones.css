@@ -1,0 +1,46 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+img{
+    width: 100%;
+}
+.container{
+    width: 100%;
+    background-color: rgb(236, 235, 235);
+}
+.encabezado{
+    background-color: rgb(250 147 112);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.principal{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.img{
+    width: 500px;
+}
+
+.detailcancion{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.playlist{
+    text-decoration: none;
+    background-color:rgb(243, 143, 126);
+    color:rgb(252, 232, 232);
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

@@ -19,6 +19,7 @@ li{
 h2{
     font-family: 'Archivo Narrow', sans-serif;
     font-size: 30px;
+    text-align: center;
 }
 .encabezado{
     background-color: rgb(250 147 112);
@@ -69,5 +70,23 @@ h2{
 .nombres{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
+}
+
+@media(min-width: 728px){
+    .eleccion{
+        width: 45%;
+        margin: 2%;
+    }
+    .secciones{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    h2{
+        width: 100%;
+    }
+
+@media(min-width:1024px){
+    
 }

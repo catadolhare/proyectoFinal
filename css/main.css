@@ -10,46 +10,44 @@
 img{
     width: 100%;
 }
-.encabezado{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    background-color: rgb(250 147 112);
+a{
+    text-decoration: none;
 }
-.opciones{
-    display: flex;
-    flex-wrap: wrap;
-    width: 33%;
-    justify-content: space-between;
-}
-.principal{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-}
-.secciones{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
+li{
+    list-style-type: none;
 }
 h2{
     font-family: 'Archivo Narrow', sans-serif;
     font-size: 30px;
 }
-.eleccion{
-    width: 65%;
+.encabezado{
+    background-color: rgb(250 147 112);
+    text-align: center;
+    width: 100%;
+}
+.opciones{
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
+    justify-content: space-around;
+}
+.opciones li a{
+    color: white;
+    font-family: 'Lato', sans-serif;
+}
+.opciones li a:hover{
+    text-decoration: underline;
+    color: darkblue;
+}
+.secciones{
+    text-align: center; 
+}
+.eleccion{
+    text-align: center;
+    margin: 10%;
+}
 }
 .info{
     width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
     list-style: none;
 }
 .info li h2{
@@ -61,6 +59,15 @@ h2{
     color: black;
 }
 .eleccion :hover{
-    background-color: rgb(247, 164, 134);
-    padding: 2%;
+    background-color: rgb(250, 164, 154);
+}
+.footer{
+    background-color: rgb(250 147 112);
+    text-align: center;
+    width: 100%; 
+}
+.nombres{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fine Line</title>
     <link rel="stylesheet" href="css/albumes.css">
+    <link rel="stylesheet" href="css/main.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:wght@300&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
 
@@ -13,31 +14,30 @@
 <body>
     <main class="container">
         <header class="encabezado">
-            <section>
-                <article class="logo">
-                    <img src="#" alt="Logo">
-                </article>
-                <nav class="buscador">
-
-                </nav>
-                <article class="opciones">
-                    <ul>
-                        <li><a href="#">Login</a></li>
-                        <li><a href="#">Registrarse</a></li>
-                    </ul>
-                </article>
-            </section>
+            <figure class="logo">
+                <img src="#" alt="Logo">
+            </figura>
+            <nav class="buscador">
+                <p>buscar</p>
+            </nav>
+            <article class="menu">
+                <ul class="opciones">
+                    <li><a href="personalPlaylist.html">Mi Playlist</a></li>
+                    <li><a href="#">Login</a></li>
+                    <li><a href="#">Registrarse</a></li>
+                </ul>
+            </article>
         </header>
         <main class="principal">
-            <aside class="album">
-                <div class="foto">
+            <section class="album">
+                <figure class="foto">
                     <img src="img/albumFineLine.jpg" alt="Album Fine Line">
-                </div>
+                </figure>
                 <ul class="opcionesPlaylist">
                     <li><a href="#">Agregar a mi Playlist</a></li>
                     <li><a href="personalPlaylist.html">Ir a mi Playlist</a></li>
                 </ul>
-            </aside>
+            </section>
             <section class="informacionAlbum">
                 <h1>Fine Line</h1>
                 <h2><a href="artistaHarryStyles.html">Harry Styles</a></h2>
@@ -62,17 +62,20 @@
             </section>
         </main>
         <footer class="footer">
-            <section>
-                <article class="nuestrosNombres">
-                    <p>Catalina Dolhare</p>
-                </article>
-                <article class="nuestrosNombres">
-                    <p>Violeta de Lella</p>
-                </article>
-                <article class="nuestrosNombres">
-                    <p>Renata Lamas</p>
-                </article>
+            <section class="nuestrosNombres">
+                <ul class="nombres">
+                    <li>Catalina Dolhare</li>
+                    <li>Violeta de Lella</li>
+                    <li>Renata Lamas</li>
+                </ul>
             </section>
+            <article class="menu">
+                <ul class="opciones">
+                    <li><a href="personalPlaylist.html">Mi Playlist</a></li>
+                    <li><a href="#">Login</a></li>
+                    <li><a href="#">Registrarse</a></li>
+                </ul>
+            </article>
         </footer>
     </main>
 </body>

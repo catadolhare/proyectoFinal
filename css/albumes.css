@@ -1,3 +1,4 @@
+  
 *{
     box-sizing: border-box;
     margin: 0;
@@ -6,32 +7,21 @@
 img{
     width: 100%;
 }
-.container{
-    width: 100%;
-    background-color: rgb(236, 235, 235);
-}
-.encabezado{
-    background-color: rgb(250 147 112);
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
 .principal{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
+    text-align: center;
 }
 .album{
-    display: flex;
-    flex-wrap: wrap;
     width: 100%;
-    justify-content: space-around;
 }
 .foto{
-    width: 50%;
+    width: 95%;
+    margin: 2%;
 }
 .opcionesPlaylist{
     list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 1%;
 }
 .opcionesPlaylist li a{
     text-decoration: none;
@@ -39,41 +29,10 @@ img{
     color:rgb(252, 232, 232);
     padding: 10px;
     margin: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 .opcionesPlaylist li a:hover{
     text-decoration: underline;
     background-color: rgb(255, 187, 0);
-    color: darkblue;
-}
-h1{
-    font-size: 65px;
-    font-family: 'Bebas Neue', cursive;
-}
-h2{
-    font-family: 'Open Sans', sans-serif;
-    font-size: 25px;
-}
-h2 a{
-    color: black;
-    text-decoration: none;
-}
-h2 a :hover{
-    text-decoration: underline;
-    color: darkblue;
-}
-h3{
-    font-family: 'Open Sans', sans-serif;
-    font-size: 15px;
-}
-h3 a{
-    color: black;
-    text-decoration: none;
-}
-h3 a :hover{
-    text-decoration: underline;
     color: darkblue;
 }
 .informacionAlbum{
@@ -81,6 +40,35 @@ h3 a :hover{
     flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
+    margin: 1%;
+}
+.informacionAlbum h1{
+    font-size: 65px;
+    font-family: 'Bebas Neue', cursive;
+}
+.informacionAlbum h2{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 25px;
+}
+.informacionAlbum h2 a{
+    color: black;
+    text-decoration: none;
+}
+.informacionAlbum h2 a :hover{
+    text-decoration: underline;
+    color: darkblue;
+}
+.informacionAlbum h3{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+}
+.informacionAlbum h3 a{
+    color: black;
+    text-decoration: none;
+}
+.informacionAlbum h3 a :hover{
+    text-decoration: underline;
+    color: darkblue;
 }
 .informacionAlbum p{
     font-family: 'Lato', sans-serif;
@@ -98,13 +86,48 @@ h3 a :hover{
     color: darkblue;
 }
 
+@media(min-width: 768px){
+    .foto{
+        width: 60%;
+    }
+    .album{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .opcionesPlaylist{
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .informacionAlbum h1{
+        font-size: 100px;
+    }
+    .informacionAlbum h2{
+        font-size: 35px;
+    }
+    .informacionAlbum h3{
+        font-size: 23px;
+    }
+    .informacionAlbum p{
+        font-size: 18px;
+    }
+}
+
 @media(min-width: 1024px){
     .principal{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
         flex-direction: row;
+    }
+    .opcionesPlaylist{
+        flex-direction: row;
+    }
+    .opcionesPlaylist li a{
+        padding: 10px 70px;
     }
     .album{
         flex-direction: column;
-        width: 50%;
+        width: 45%;
     }
     .foto{
         width: 100%;
@@ -112,13 +135,13 @@ h3 a :hover{
     .informacionAlbum{
         width: 50%;
     }
-    h1{
+    .informacionAlbum h1{
         font-size: 120px;
     }
-    h2{
+    .informacionAlbum h2{
         font-size: 45px;
     }
-    h3{
+    .informacionAlbum h3{
         font-size: 30px;
     }
     .informacionAlbum p{

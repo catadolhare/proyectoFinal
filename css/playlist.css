@@ -3,12 +3,41 @@
     margin: 0;
     padding: 0;   
 }
-.personalplaylist{
+.playlist{
+    text-align: center;
+}
+.playlist h1{
+    font-size: 30px;
+}
+.favoritos li ul{
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    background-color:rgb(243, 143, 126);
+    justify-content: space-around;
+}
+.favoritos li{
+    margin: 2%;
+}
+.orden li{
+    text-decoration: underline;
+    font-size: 18px;
+}
+
+@media(min-width: 768px){
+    .playlist h1{
+        font-size: 50px;
+        margin: 2%;
+    }
+    .orden li{
+        font-size: 27px;
+    }
+    .elegido li{
+        font-size: 20px;
+    }
+
+}
+
+@media(min-width: 1024px){
+    .playlist h1{
+        font-size: 70px;
+    }
 }

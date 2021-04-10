@@ -46,7 +46,6 @@ h2{
     text-align: center;
     margin: 10%;
 }
-}
 .info{
     width: 100%;
     list-style: none;
@@ -86,7 +85,10 @@ h2{
     h2{
         width: 100%;
     }
-
-@media(min-width:1024px){
-    
+}
+@media(min-width: 1024px){
+    .eleccion{
+        width: 18%;
+        margin: 1%;
+    }
 }

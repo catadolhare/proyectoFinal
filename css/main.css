@@ -23,7 +23,7 @@ h2{
     color: white;
 }
 .encabezado{
-    background-color: rgb(250 147 112);
+    background-color: black;
     text-align: center;
     width: 100%;
 }
@@ -33,12 +33,20 @@ h2{
     justify-content: space-around;
 }
 .opciones li a{
-    color: white;
+    color: blanchedalmond;
     font-family: 'Lato', sans-serif;
 }
 .opciones li a:hover{
     text-decoration: underline;
-    color: darkblue;
+    color: rgb(245, 245, 60);
+}
+.buscador{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(212, 212, 212);
+    height: 25px;
+    margin: 10px;
 }
 .secciones{
     text-align: center; 
@@ -60,7 +68,7 @@ h2{
     color: white;
 }
 .eleccion :hover{
-    background-color: rgb(250, 164, 154);
+    background-color: rgb(212, 212, 212);
 }
 .footer{
     background-color: rgb(250 147 112);
@@ -74,6 +82,20 @@ h2{
 }
 
 @media(min-width: 728px){
+    .encabezado{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    .logo{
+        width: 25%;
+    }
+    .buscador{
+        width: 45%;
+    }
+    .menu{
+        width: 30%;
+    }
     .eleccion{
         width: 45%;
         margin: 2%;

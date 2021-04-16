@@ -22,6 +22,9 @@ h2{
     text-align: center;
     color: white;
 }
+p{
+    color: white;
+}
 .encabezado{
     background-color: black;
     text-align: center;
@@ -71,7 +74,7 @@ h2{
     background-color: rgb(212, 212, 212);
 }
 .footer{
-    background-color: rgb(250 147 112);
+    background-color: black;
     text-align: center;
     width: 100%; 
 }
@@ -79,6 +82,9 @@ h2{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+}
+.nombres li{
+    color: white;
 }
 
 @media(min-width: 728px){

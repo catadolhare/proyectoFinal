@@ -95,13 +95,13 @@ p{
         flex-direction: row;
     }
     .logo{
-        width: 25%;
+        width: 15%;
     }
     .buscador{
-        width: 45%;
+        width: 50%;
     }
     .menu{
-        width: 30%;
+        width: 35%;
     }
     .eleccion{
         width: 45%;

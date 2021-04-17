@@ -8,6 +8,7 @@
 }
 .playlist h1{
     font-size: 30px;
+    color: white;
 }
 .favoritos li ul{
     display: flex;

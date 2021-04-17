@@ -59,6 +59,9 @@ p{
     text-align: center;
     margin: 10%;
 }
+.eleccion img{
+    height: 77%;
+}
 .info{
     width: 100%;
     list-style: none;

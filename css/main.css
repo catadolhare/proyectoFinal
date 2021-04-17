@@ -118,9 +118,7 @@ p{
     .secciones h2{
         width: 100%;
     }
-    .info li h2{
-        width: 100%;
-    }
+
 }
 @media(min-width: 1024px){
     .eleccion{

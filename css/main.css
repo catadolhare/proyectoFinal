@@ -94,17 +94,17 @@ p{
 @media(min-width: 728px){
     .encabezado{
         display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
     }
     .logo{
         width: 15%;
     }
     .buscador{
-        width: 50%;
+        background-color: red;
     }
     .menu{
-        width: 35%;
+        background-color: green;
     }
     .eleccion{
         width: 45%;

@@ -1,46 +1,144 @@
 *{
     box-sizing: border-box;
-    margin: 0;
     padding: 0;
+    margin: 0;
 }
-img{
+.main{
     width: 100%;
+    background-color: black;
 }
-.container{
-    width: 100%;
-    background-color: rgb(236, 235, 235);
-}
-.encabezado{
-    background-color: rgb(250 147 112);
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-.principal{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-}
-.img{
-    width: 500px;
-}
-
-.detailcancion{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
+.header{
+    background-color: black;
     text-align: center;
-    justify-content: center;
+    width: 100%; 
 }
-
-.playlist{
+.nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    background-color: rgb(212, 212, 212);
+    height: 25px;
+    margin: 10px; 
+}
+.ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+.ul li a{
+    color: blanchedalmond;
+    font-family: 'Lato', sans-serif;
+}
+.ul li a:hover{
+    text-decoration: underline;
+    color: rgb(245, 245, 60);
+}
+.main2{
+    text-align: center; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.detailcancion{
+ width: 90%;
+}
+.fotoalbum{
+  width: 50%; 
+  margin: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+}
+.detallecanción h1{
+    color: blanchedalmond;
+    font-size: 65px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.detallecanción h3{
+    color: white;
     text-decoration: none;
-    background-color:rgb(243, 143, 126);
+    font-family: 'Times New Roman', Times, serif;
+}
+.playlist{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 1%;
+}
+.playlist li a{
+    text-decoration: none;
+    background-color:rgb(116, 192, 243);
     color:rgb(252, 232, 232);
     padding: 10px;
     margin: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+}
+.playlist li a:hover{
+    text-decoration: underline;
+    background-color: rgb(255, 187, 0);
+    color: darkblue;
+}
+
+@media(min-width: 728px){
+    .header{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    .logo{
+        width: 15%;
+    }
+    .nav{
+        width: 50%;
+    }
+    .section1{
+        width: 35%;
+    }
+    .eleccion{
+        width: 45%;
+        margin: 2%;
+    }
+    .secciones{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .secciones h2{
+        width: 100%;
+    }
+
+}
+@media(min-width: 1024px){
+    .main2{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-direction: row;
+    }
+    .playlist{
+        flex-direction: row;
+    }
+    .playlist li a{
+        padding: 20px 70px;
+    }
+    .detailcancion{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-direction: center;
+        width: 35%;
+    }
+    .fotoalbum{
+        width: 50%;
+    }
+    .detallecanción{
+        width: 50%;
+    }
+    .detallecanción h1{
+        font-size: 118px;
+    }
+    .detallecanción h3{
+        font-size: 30px;
+    }
 }

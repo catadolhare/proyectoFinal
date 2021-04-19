@@ -110,8 +110,35 @@
 
 }
 @media(min-width: 1024px){
-    .eleccion{
-        width: 18%;
-        margin: 1%;
+    .main2{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-direction: row;
+    }
+    .playlist{
+        flex-direction: row;
+    }
+    .playlist li a{
+        padding: 20px 70px;
+    }
+    .detailcancion{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-direction: center;
+        width: 35%;
+    }
+    .fotoalbum{
+        width: 50%;
+    }
+    .detallecanción{
+        width: 50%;
+    }
+    .detallecanción h1{
+        font-size: 118px;
+    }
+    .detallecanción h3{
+        font-size: 30px;
     }
 }

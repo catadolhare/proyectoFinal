@@ -81,6 +81,7 @@ p{
     background-color: black;
     text-align: center;
     width: 100%; 
+    margin-top: 2%;
 }
 .nombres{
     display: flex;
@@ -100,11 +101,17 @@ p{
     .logo{
         width: 15%;
     }
-    .buscador{
-        background-color: red;
-    }
     .menu{
-        background-color: green;
+        width: 40%;
+    }
+    .buscador{
+        width: 45%;
+    }
+    .formulario{
+        width: 100%;
+    }
+    .buscador input{
+        width: 100%;
     }
     .eleccion{
         width: 45%;

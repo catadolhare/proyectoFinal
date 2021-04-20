@@ -1,0 +1,12 @@
+h1{
+    color: white;
+}
+
+
+
+.POP{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}

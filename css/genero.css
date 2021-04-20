@@ -10,43 +10,22 @@
     background-image: url(../img/fondo\ negro.jfif);
     background-position: center;
     background-position: cover;
-    padding: left;
+
 }
 
-.navegacion{
-    height: 12%;
-    display: flex;
-    align-items: center;
-}
-.logo{
-    width: 50px;
-    cursor: pointer;}
 
-nav{
-    flex:1;
-    text-align: right;
-}
-nav ul li{
-    list-style: none;
-    display: inline-block;
-    margin: 60px;
-}
-nav ul li a{
-    text-decoration: none;
-    color: blanchedalmond;
-    font-size: 13px;}
     
 .contenido{
     display: flex;
-    height: 88%;
-    align-items: center;
+align-items: center;
+height: 88%;} /* pongo height 88%  para que ocupe eso en la pantalla*/
 
-}
 .columna1{
     color:whitesmoke; 
     font-size: 50px; 
-    margin: 10%;
     width: 35%;
+    margin: 10%;  /* sin el margen se desordenan las imagenes de la columna 2*/
+   
 
 }
 .columna2{
@@ -55,7 +34,8 @@ nav ul li a{
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    margin: 1%;
+  
+
  
 }
 .genero1{
@@ -64,7 +44,10 @@ nav ul li a{
     background-position: cover;
     width: 200px;
     height: 200px; 
-    text-align: center;
+   text-align: center;
+ 
+   
+   
 
 }
 .genero2{
@@ -74,15 +57,19 @@ nav ul li a{
     width: 200px;
     height: 200px; 
     text-align: center;
+    margin: 2%;
+    
 
 }
 .genero3{
-    background-image: url(../img/Beats.jpg);
+    background-image: url(../img/historia-del-rock-and-roll-1280x720.jpg);
     background-position: center;
     background-position: cover;
     width: 200px;
     height: 200px; 
     text-align: center;
+    margin: 2%;
+    
 
 }
 .genero4{
@@ -92,28 +79,34 @@ nav ul li a{
     width: 200px;
     height: 200px; 
     text-align: center;
+    margin: 2%;
+    
 
 }
 .genero5{
-    background-image: url(../img/Pop.jpg);
+    background-image: url(../img/Acoustic.jfif);
     background-position: center;
     background-position: cover;
     width: 200px;
     height: 200px; 
     text-align: center;
+    margin: 2%;
+   +
 
 }
 .genero6{
-    background-image: url(../img/Pop.jpg);
-    background-position: center;
-    background-position: cover;
+    background-image: url(../img/punk\ 2.webp);
+    object-fit:cover;
     width: 200px;
     height: 200px; 
     text-align: center;
+    margin: 2%;
+  
 
 }
 h3{
     background-color: whitesmoke;
+   border-radius: 150px;
 }
 
 .musica{

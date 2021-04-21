@@ -19,9 +19,9 @@
                 </a>
             </figure>
             <nav class="buscador">
-                    <form action="searchResults.html" method="GET" class="formulario">
-                        <input type="text" name="buscar" id="buscar" placeholder="Buscar">
-                    </form>
+                <form action="searchResults.html" method="GET" class="formulario">
+                    <input type="text" name="buscar" id="buscar" placeholder="Buscar">
+                </form>
             </nav>
             <article class="menu">
                 <ul class="opciones">
@@ -33,7 +33,11 @@
         </header>
         <main class="principal">
             <section class="secciones">
-                <h2>Canciones recomendadas</h2>
+                <article class="nombreSeccion">
+                    <i class="fas fa-music"></i>
+                    <h2>Canciones recomendadas</h2>
+                    <i class="fas fa-music"></i>
+                </article>
                 <article class="eleccion">
                     <a href="detailCancion.html">
                         <img src="#" alt="Imagen">
@@ -81,7 +85,11 @@
                 </article>
             </section>    
             <section class="secciones">
-                <h2>Artisas recomendados</h2>
+                <article class="nombreSeccion">
+                    <i class="fas fa-guitar"></i>
+                    <h2>Artistas recomendados</h2>
+                    <i class="fas fa-guitar"></i>
+                </article>
                 <article class="eleccion">
                     <a href="detailArtista.html">
                         <img src="#" alt="Imagen de Harry">
@@ -114,7 +122,11 @@
                 </article>
             </section> 
             <section class="secciones">
-                <h2>Albumes recomendados</h2>
+                <article class="nombreSeccion">
+                    <i class="fas fa-record-vinyl"></i>
+                    <h2>Albumes recomendados</h2>
+                    <i class="fas fa-record-vinyl"></i>
+                </article>
                 <article class="eleccion">
                     <a href="detailAlbum.html">
                         <img src="img/albumFineLine.jpg" alt="Album Fine Line">
@@ -170,13 +182,21 @@
                     <li>Renata Lamas</li>
                 </ul>
             </section>
-            <article class="menu">
+            <article class="menuFooter">
                 <ul class="opciones">
                     <li><a href="personalPlaylist.html">Mi Playlist</a></li>
                     <li><a href="#">Login</a></li>
                     <li><a href="#">Registrarse</a></li>
                 </ul>
             </article>
+            <article class="buscadorFooter">
+                <form action="searchResults.html" method="GET" class="formulario">
+                    <input type="text" name="buscar" id="buscar" placeholder="Buscar">
+                </form>
+            </article>
+            <figure class="logoFooter">
+                <img src="img/logoMusicWave.JPG" alt="Music Wave">
+            </figure>
         </footer>
     </main>
 </body>

@@ -5,7 +5,7 @@
 }
 .container{
     width: 100%;
-    background-color: black;
+    background-color: rgb(63, 63, 63);
 }
 img{
     width: 100%;
@@ -43,24 +43,20 @@ p{
     text-decoration: underline;
     color: rgb(245, 245, 60);
 }
-.buscador{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: black;
-    background-color: rgb(212, 212, 212);
-    height: 25px;
-    margin: 10px;
-}
 .secciones{
     text-align: center; 
+}
+.nombreSeccion{
+    width: 100%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(46, 46, 46);
 }
 .eleccion{
     text-align: center;
     margin: 10%;
-}
-.eleccion img{
-    height: 77%;
 }
 .info{
     width: 100%;
@@ -74,8 +70,8 @@ p{
     font-family: 'Open Sans', sans-serif;
     color: white;
 }
-.eleccion :hover{
-    background-color: rgb(212, 212, 212);
+.eleccion:hover{
+    background-color: rgb(145, 145, 145);
 }
 .footer{
     background-color: black;
@@ -87,9 +83,16 @@ p{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    margin: 2%;
 }
 .nombres li{
     color: white;
+}
+.menuFooter{
+    margin: 2%;
+}
+.buscadorFooter{
+    margin: 2%;
 }
 
 @media(min-width: 728px){
@@ -105,7 +108,8 @@ p{
         width: 40%;
     }
     .buscador{
-        width: 45%;
+        width: 42%;
+        margin: 2%;
     }
     .formulario{
         width: 100%;
@@ -124,6 +128,19 @@ p{
     }
     .secciones h2{
         width: 100%;
+    }
+    .menuFooter{
+        width: 100%;
+    }
+    .buscadorFooter{
+        width: 95%;
+        margin: 2%;
+    }
+    .buscadorFooter input{
+        width: 100%;
+    }
+    .logoFooter{
+        width: 30%;
     }
 
 }

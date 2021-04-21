@@ -23,6 +23,7 @@ img{
     color:rgb(252, 232, 232);
     padding: 10px;
     margin: 10px;
+    border-radius: 5px;
 }
 .opcionesPlaylist li a:hover{
     text-decoration: underline;
@@ -119,7 +120,7 @@ img{
         flex-direction: row;
     }
     .opcionesPlaylist li a{
-        padding: 10px 70px;
+        padding: 10px 40px;
     }
     .album{
         flex-direction: column;

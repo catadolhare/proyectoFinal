@@ -19,12 +19,11 @@
                     <img src="img/logoMusicWave.JPG" alt="Logo Music Wave">
                 </a>
             </figure>
-            <a href="searchResults.html">
-                <nav class="buscador">
-                    <i class="fas fa-search"></i>
-                    <h5>Buscar</h5>
-                </nav>
-            </a>
+            <nav class="buscador">
+                <form action="searchResults.html" method="GET" class="formulario">
+                    <input type="text" name="buscar" id="buscar" placeholder="Buscar">
+                </form>
+            </nav>
             <article class="menu">
                 <ul class="opciones">
                     <li><a href="personalPlaylist.html">Mi Playlist</a></li>
@@ -74,13 +73,21 @@
                     <li>Renata Lamas</li>
                 </ul>
             </section>
-            <article class="menu">
+            <article class="menuFooter">
                 <ul class="opciones">
                     <li><a href="personalPlaylist.html">Mi Playlist</a></li>
                     <li><a href="#">Login</a></li>
                     <li><a href="#">Registrarse</a></li>
                 </ul>
             </article>
+            <article class="buscadorFooter">
+                <form action="searchResults.html" method="GET" class="formulario">
+                    <input type="text" name="buscar" id="buscar" placeholder="Buscar">
+                </form>
+            </article>
+            <figure class="logoFooter">
+                <img src="img/logoMusicWave.JPG" alt="Music Wave">
+            </figure>
         </footer>
     </main>
 </body>

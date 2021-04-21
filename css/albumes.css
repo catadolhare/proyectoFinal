@@ -82,31 +82,13 @@ img{
     text-decoration: underline;
     color: rgb(255, 187, 0);
 }
-
-@media(min-width: 768px){
-    .foto{
-        width: 60%;
-    }
-    .album{
-        display: flex;
-        flex-wrap: wrap;
-    }
-    .opcionesPlaylist{
-        flex-direction: column;
-        justify-content: space-evenly;
-    }
-    .informacionAlbum h1{
-        font-size: 100px;
-    }
-    .informacionAlbum h2{
-        font-size: 35px;
-    }
-    .informacionAlbum h3{
-        font-size: 23px;
-    }
-    .informacionAlbum p{
-        font-size: 18px;
-    }
+.recomAlbum{
+    margin: 5%;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 3px;
+}
+.recomAlbum1{
+    margin: 5%;
 }
 
 @media(min-width: 1024px){
@@ -123,6 +105,8 @@ img{
         padding: 10px 40px;
     }
     .album{
+        display: flex;
+        flex-wrap: wrap;
         flex-direction: column;
         width: 45%;
     }
@@ -146,5 +130,22 @@ img{
     }
     .canciones li{
         font-size: 22px;
+    }
+    .recomAlbum{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 2%;
+    }
+    .recomAlbum h3{
+        width: 100%;
+        margin-top: 2%;
+    }
+    .recomAlbum1{
+        width: 25%;
+        margin: 3%;
+    }
+    .recomAlbum1:hover{
+        background-color: rgb(134, 84, 84);
     }
 }

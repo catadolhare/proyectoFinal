@@ -16,30 +16,75 @@
     background-color: rgb(5, 235, 5);
     padding: 5px;
     border-radius: 7px;
+    margin: 2% 10%;
     display: flex;
     justify-content: center;
 }
 .favorito{
-    margin: 2%;
+    margin: 2% 10%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
 }
 .favorito img{
-    width: 10%;
+    width: 20%;
 }
 .elegido{
-    width: 86%;
+    width: 76%;
     text-align: justify;
     margin: 2%;
-
 }
-
-@media(min-width: 768px){
+.sugCancion{
+    width: 56%;
+    margin: 2%;
+}
+.favorito h5{
+    color: white;
+    background-color: rgb(5, 235, 5);
+    padding: 5px;
+    border-radius: 7px;
+}
+.sugCancion h6{
+    color: white;
+}
+.sugCancion li{
+    color: white;
+}
+.sugCancion li a{
+    color: white;
+}
+.sugerencia{
+    background-color: rgb(122, 78, 78);
+    margin: 1%;
+    border-radius: 2px;
+}
+@media(min-width: 1024px){
     .playlist h1{
         font-size: 50px;
         margin: 2%;
     }
-
+    .play{
+        margin-left: 35%;
+        margin-right: 35%;
+    }
+    .favorito{
+        margin-right: 20%;
+        margin-left: 20%;
+    }
+    .elegido{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 76%;
+    }
+    .favorito img{
+        width: 20%;
+    }
+    .sugerencia{
+        width: 50%;
+    }
+    .nuevasCanciones{
+        display: flex;
+    }
 }

@@ -7,6 +7,7 @@
     <title>PersonalPlaylist</title>
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/playlist.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
 </head>
 <body>
     <main class="container">
@@ -16,12 +17,11 @@
                     <img src="img/logoMusicWave.JPG" alt="Logo Music Wave">
                 </a>
             </figure>
-            <a href="searchResults.html">
-                <nav class="buscador">
-                    <i class="fas fa-search"></i>
-                    <h5>Buscar</h5>
-                </nav>
-            </a>
+            <nav class="buscador">
+                <form action="searchResults.html" method="GET" class="formulario">
+                    <input type="text" name="buscar" id="buscar" placeholder="Buscar">
+                </form>
+            </nav>
             <article class="menu">
                 <ul class="opciones">
                     <li><a href="personalPlaylist.html">Mi Playlist</a></li>
@@ -32,57 +32,66 @@
         </header>
         <section class="playlist">
             <h1>PERSONAL PLAYLIST</h1>
-            <ol class="favoritos">
-                <li>
-                    <ul class="orden">
-                        <li>Canción</li>
-                        <li>Album</li>
-                        <li>Artista</li>
-                    </ul>
-                </li>
-                <li>
-                    <ul class="elegido">
-                        <li><a href="detailGolden.html">Golden</a></li>
-                        <li><a href="detailFineLine.html">Fine Line</a></li>
-                        <li><a href="artistaHarryStyles.html">Harry Styles</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <ul class="elegido">
-                        <li><a href="#">Lorem, ipsum.</a></li>
-                        <li><a href="#">Lorem, ipsum.</a></li>
-                        <li><a href="#">Lorem, ipsum.</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <ul class="elegido">
-                        <li><a href="#">Lorem, ipsum.</a></li>
-                        <li><a href="#">Lorem, ipsum.</a></li>
-                        <li><a href="#">Lorem, ipsum.</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <ul class="elegido">
-                        <li><a href="#">Lorem, ipsum.</a></li>
-                        <li><a href="#">Lorem, ipsum.</a></li>
-                        <li><a href="#">Lorem, ipsum.</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <ul class="elegido">
-                        <li><a href="#">Lorem, ipsum.</a></li>
-                        <li><a href="#">Lorem, ipsum.</a></li>
-                        <li><a href="#">Lorem, ipsum.</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <ul class="elegido">
-                        <li><a href="#">Lorem, ipsum.</a></li>
-                        <li><a href="#">Lorem, ipsum.</a></li>
-                        <li><a href="#">Lorem, ipsum.</a></li>
-                    </ul>
-                </li>
-            </ol>
+            <article class="play">
+                <i class="fas fa-play"></i>
+                <h5>PLAY</h5>
+            </article>
+            <article class="favorito">
+                <img src="img/albumFineLine.jpg" alt="Album Fine Line">
+                <ul class="elegido">
+                    <li><a href="detailGolden.html">Golden</a></li>
+                    <li><a href="detailFineLine.html">Fine Line</a></li>
+                    <li><a href="artistaHarryStyles.html">Harry Styles</a></li>
+                </ul>
+            </article>
+            <article class="favorito">
+                <img src="img/albumFutureNostalgia.jpg" alt="Album Future Nostalgia">
+                <ul class="elegido">
+                    <li><a href="detailGolden.html">Levitating</a></li>
+                    <li><a href="detailFineLine.html">Future Nostalgia</a></li>
+                    <li><a href="artistaHarryStyles.html">Dua Lipa</a></li>
+                </ul>
+            </article>
+            <article class="favorito">
+                <img src="img/albumPositions.jpg" alt="Album Positions">
+                <ul class="elegido">
+                    <li><a href="detailGolden.html">pov</a></li>
+                    <li><a href="detailFineLine.html">Positions</a></li>
+                    <li><a href="artistaHarryStyles.html">Ariana Grande</a></li>
+                </ul>
+            </article>
+            <article class="favorito">
+                <img src="img/albumAlicia.jpg" alt="Album Alicia">
+                <ul class="elegido">
+                    <li><a href="detailGolden.html">Show Me Love</a></li>
+                    <li><a href="detailFineLine.html">Alicia</a></li>
+                    <li><a href="artistaHarryStyles.html">ALicia Keys</a></li>
+                </ul>
+            </article>
+            <article class="favorito">
+                <img src="img/albumQuieroVolver.jpg" alt="Album Quiero Volver">
+                <ul class="elegido">
+                    <li><a href="detailGolden.html">Quiero Volver</a></li>
+                    <li><a href="detailFineLine.html">Quiero Volver</a></li>
+                    <li><a href="artistaHarryStyles.html">TINI</a></li>
+                </ul>
+            </article>
+            <article class="favorito">
+                <img src="img/albumFutureNostalgia.jpg" alt="Album Future Nostalgia">
+                <ul class="elegido">
+                    <li><a href="detailGolden.html">Breack My Heart</a></li>
+                    <li><a href="detailFineLine.html">Future Nostalgia</a></li>
+                    <li><a href="artistaHarryStyles.html">Dua Lipa</a></li>
+                </ul>
+            </article>
+            <article class="favorito">
+                <img src="img/albumWalls.jpg" alt="Album Walls">
+                <ul class="elegido">
+                    <li><a href="detailGolden.html">Always You</a></li>
+                    <li><a href="detailFineLine.html">Walls</a></li>
+                    <li><a href="artistaHarryStyles.html">Louis Tomlinson</a></li>
+                </ul>
+            </article>
         </section>
         <footer class="footer">
             <section class="nuestrosNombres">
@@ -92,13 +101,21 @@
                     <li>Renata Lamas</li>
                 </ul>
             </section>
-            <article class="menu">
+            <article class="menuFooter">
                 <ul class="opciones">
                     <li><a href="personalPlaylist.html">Mi Playlist</a></li>
                     <li><a href="#">Login</a></li>
                     <li><a href="#">Registrarse</a></li>
                 </ul>
             </article>
+            <article class="buscadorFooter">
+                <form action="searchResults.html" method="GET" class="formulario">
+                    <input type="text" name="buscar" id="buscar" placeholder="Buscar">
+                </form>
+            </article>
+            <figure class="logoFooter">
+                <img src="img/logoMusicWave.JPG" alt="Music Wave">
+            </figure>
         </footer>
     </main>
 </body>

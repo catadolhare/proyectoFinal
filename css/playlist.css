@@ -5,6 +5,9 @@
     font-size: 30px;
     color: white;
 }
+.elegido li{
+    color: white;
+}
 .elegido li a{
     color: white;
 }
@@ -20,17 +23,17 @@
     margin: 2%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 .favorito img{
     width: 10%;
 }
 .elegido{
-    width: 90%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    width: 86%;
+    text-align: justify;
+    margin: 2%;
+
 }
 
 @media(min-width: 768px){

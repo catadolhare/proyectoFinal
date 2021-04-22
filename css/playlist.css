@@ -2,8 +2,8 @@
     text-align: center;
 }
 .playlist h1{
-    font-size: 30px;
     color: white;
+    font-size: 45px;
 }
 .elegido li{
     color: white;
@@ -39,14 +39,11 @@
     width: 56%;
     margin: 2%;
 }
-.favorito h5{
+.sug h5{
     color: white;
     background-color: rgb(5, 235, 5);
     padding: 5px;
     border-radius: 7px;
-}
-.sugCancion h6{
-    color: white;
 }
 .sugCancion li{
     color: white;
@@ -59,18 +56,32 @@
     margin: 1%;
     border-radius: 2px;
 }
+.sug{
+    margin: 2% 10%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.sug img{
+    width: 20%;
+}
 @media(min-width: 1024px){
     .playlist h1{
-        font-size: 50px;
-        margin: 2%;
+        font-size: 80px;
+        margin: 1%;
     }
     .play{
         margin-left: 35%;
         margin-right: 35%;
     }
     .favorito{
-        margin-right: 20%;
+        margin-right: 30%;
+        margin-left: 30%;
+    }
+    .sug{
         margin-left: 20%;
+        margin-right: 20%;
     }
     .elegido{
         display: flex;

@@ -59,6 +59,7 @@ height: 88%;} /* pongo height 88%  para que ocupe eso en la pantalla*/
     text-align: center;
     margin: 2%;
     
+    
 
 }
 .genero3{
@@ -96,7 +97,7 @@ height: 88%;} /* pongo height 88%  para que ocupe eso en la pantalla*/
 }
 .genero6{
     background-image: url(../img/punk\ 2.webp);
-    
+    background-position: cover;
     width: 200px;
     height: 200px; 
     text-align: center;
@@ -113,4 +114,11 @@ h3{
     width: 200px; 
     margin: 10px;
     height: 200px;
+}
+@media(min-width: 420px){
+ .contenido{
+     display: flex;
+     flex-wrap: wrap;
+     background-color: darkkhaki;
+ }
 }

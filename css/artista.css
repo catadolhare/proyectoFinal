@@ -76,7 +76,10 @@ p{
       }
     .fila4{
         display: flex;
-     }
+        width: 50%;
+        justify-content: space-between;
+        background-color: cadetblue;
+     } 
     
     .nombre{
         margin: 20px;
@@ -115,16 +118,18 @@ p{
      }
     
      .albumH{
-       width: 30%;
+       width: 20%;
+       height: 40%;
        margin: 2% 0;
+       
        
     }
     .imagendeharry{
-        width: 90%; /* 20% de la caja que la caja equivale a un 30% de la caja entera*/
-        height: 90%;
+        width: 100%; /* 20% de la caja que la caja equivale a un 30% de la caja entera*/
+        
     }
     .article7{
-       
+        
         display: flex;
         flex-direction: column;
         justify-content: center;

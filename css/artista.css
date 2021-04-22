@@ -1,77 +1,179 @@
 *{
-    box-sizing:border-box; padding: 10px;
+    box-sizing:border-box; 
+     margin:0;
+     padding: 0;
     color: white;
     font-family: 'Montserrat', sans-serif;
     }
     .padre{
         background-image: url(../img/dark-black-abstract-background-with-wood-chips.jpg);
+        background-size: cover; /* cubra toda la pantalla*/       
+       
     }
-   
-  
     .section{
-        background-color: red;
-       background-image: url(../img/cropped-Harry-Styles.jpg);
-       background-position:top;
+        background-image: url(../img/cropped-Harry-Styles.jpg); 
+        background-repeat: no-repeat;
+        background-size: cover; /* cubra toda la pantalla*/
+        width: 100%; /* ancho del 100%*/
+        height: 600px; /* ocupe 600px de pantalla */
+       padding:2%;
 
-       background-repeat:no-repeat;
-       background-size: 100%;
-        display: flex;
-        flex-direction: column;
-        align-content: center;
-        flex-wrap:nowrap;
-    }
-    .footer{
-        background-color:hotpink
-    }
-    .fila1{
-        display: flex;
-       flex-direction: row;
-  }
+       }
+       .section2{
+           display: flex;
+           flex-direction: column; 
+           width: 50%; /*solo tenga ese ancho*/
+           height: 600px; /* solo que tenga ese ancho */
+           justify-content: center; /* para que los elementos se alineen en el centro, es decir las 3 filas*/
+                }
+        
+       .fila1{
+           display: flex;
+            width:400px;  
+            justify-content: center; 
+        background-color: rgba(255, 255, 255, 0.274);   }
        
     .fila2{
         display: flex;
         flex-direction: row;
-        }
-    .texto-principal h1{
-        font-size: 30px;
+        
+
     }
-    .articulo2{
+    .fila3{
+        display: flex;
+        flex-direction: row;
+       
+    }
+    
+    .nombre{
+        margin: 20px;
+        font-size: 40px; /* tamaño de la letra */
+    }
+    .article1{
+       
+        width:180px;
+        height: 50px; 
+        border-radius: 10px;
+        margin: 20px;
+        display: flex;
+        justify-content: center;  /* poner en el centro */
+        align-items: center; /* alinear texto en el centro*/
+      
+    }
+    .article2{
         display: flex;
         flex-direction: column;
-    }
+        justify-content: center; /* centro el texto al mismo nivel que play artist*/
+        margin: 20px; /* aplico margin 20 px para que haya un espacio entre art 2 y 3*/ }
   
-    .article1{
-        background-color:slategrey;
-        width:200px;
-        height: 100px; 
-        border-radius: 10px;   
-    }
-    .biografia{
-        display: flex; 
-    }
-    .bio1{
-      ; width: 40%;
-    }
-    .bio2{
-       ; width: 20%;
-    }
-    .similares{
-        ; width: 40%;
-    }
-    .famosos{
-        display: flex;  }
-
-   .famosos img{
-    background-position: center;
-    background-size: cover;
-    width: 150px;
-    height:150px;
-    border-radius:150px;
+    .article3{ display: flex;
+        flex-direction: column;
+        justify-content: center; /* centro el texto al mismo nivel que play artist*/
+            }
+   .article4{
+       display: flex;
+       margin: 20px; /* le pongo solo margin a este y no article 5  para que me queden en la misma linea que article 1 y2*/       
    }
-  .taylor{
-      display: flex;
-      flex-direction: column;
+   .article5{
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       
+    }
+    .article6{
+        display: flex;
+       margin: 20px;
+    }
+    .article7{
+       
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+   h6{ color: rgba(255, 255, 255, 0.747);
+       margin: 5px 0px;
+
+   }
+   h4{
+       margin: 5px 0px;
+   }
+
+   .biografia{
+       display: flex;
+       flex-direction: row;
+       padding: 2%;
+   }
+   .bio1{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    background-color: khaki;
+    
+     }
+     .harry{
+        display: flex;
+        width:300px;  
+        justify-content: center; 
+        text-align: justify;
+        
+        
+     }
+     .harry2{
+         margin-top: 2%;
+     }
+     .bio2{
+         display: flex;
+         flex-direction: column;
+         width: 50%;
+    background-color:lightpink;
+    
+     }
+    
+   .primerafila{
+       display: flex;
+       justify-content: center;
+       justify-content:space-around;
+       background-color: lightseagreen;
+   }
+   .segundafila{
+       display: flex;
+       justify-content: center;
+       justify-content: space-around;
+       background-color: limegreen;
+   }
+   .tercerafila{
+       display: flex;
+       flex-direction: column;
+       background-color: magenta;
+   }
+   .cuartafila{
+       display: flex;
+       flex-direction: column;
+
+   }
+   .años{ background-color: maroon;
+
+   }
+   .estilosmusicales{ background-color: mediumblue;
+
+   }
+  .instrumento{ background-color:red;
+
   }
- 
+  .discografias{ 
+      background-color: olive;
+
+  }
+  .redes{
+      background-color: black
+  }
+  .similar{
+      background-color: powderblue;
+
+  }
+    .famosos{
+
+    }
     
     

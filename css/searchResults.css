@@ -1,12 +1,29 @@
+.encabezado{
+    background-image: url(../img/fondo\ negro.jfif);
+}
 h1{
     color: white;
+    font-family: Bebas neue;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
-
-
+h3{
+    color: white;
+    font-family: Open sans-serif;
+}
 
 .POP{
+    text-align: center;
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
     align-items: center;
+    justify-content: space-evenly;
     color: white;
+    font-family: lato;
+    padding: 10px;
+    background-color: violet;
+    box-sizing: border-box;
 }
+

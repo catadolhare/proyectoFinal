@@ -6,6 +6,8 @@
 .main{
     width: 100%;
     background-color: black;
+    text-align: center;
+    background-image: url(../img/fondo\ negro.jfif);
 }
 .header{
     background-color: black;
@@ -36,30 +38,32 @@
     color: rgb(245, 245, 60);
 }
 .main2{
-    text-align: center; 
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
+    margin: 0% 15%;
+    
 }
-.detailcancion{
+.detailcanción{
  width: 90%;
 }
+
 .fotoalbum{
-  width: 50%; 
+  width: 90%; 
   margin: 2px;
   display: flex;
   justify-content: center;
   align-items: center;  
 }
-.detallecanción h1{
-    color: blanchedalmond;
-    font-size: 65px;
-    font-family: 'Times New Roman', Times, serif;
+.class h1{
+    color:white;
+    font-size: 30px;
+    font-family: 'Bebas Neue';
 }
-.detallecanción h3{
-    color: white;
+.ul2 li a:hover{
+    text-decoration: white;
     text-decoration: none;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: lato;
 }
 .playlist{
     list-style: none;
@@ -78,6 +82,15 @@
     text-decoration: underline;
     background-color: rgb(255, 187, 0);
     color: darkblue;
+}
+.article5{
+    margin: 5%;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 3px;
+    width: 40%;   
+}
+.h3{
+    color: white;
 }
 
 @media(min-width: 728px){

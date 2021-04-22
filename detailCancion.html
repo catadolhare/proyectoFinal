@@ -7,6 +7,8 @@
     <title>Golden</title>
     <link rel="stylesheet" href="css/canciones.css">
     <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow&family=Bebas+Neue&family=Lato:wght@300&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
 </head>
 <body>
   <main class="main">
@@ -17,9 +19,10 @@
             </a>
         </figure>
         <a href="searchResults.html">
-            <nav class="buscador">
-                <i class="fas fa-search"></i>
-                <h5>Buscar</h5>
+            <nav class="nav">
+                <form action="searchResults.html" method="GET" class="formulario">
+                    <input type="text" name="buscar" id="buscar" placeholder="Buscar">
+                </form>
             </nav>
         </a>
         <article class="menu">
@@ -35,14 +38,42 @@
             <figure class="fotoalbum">
                 <img src="img/albumFineLine.jpg" alt="Foto FineLine">
             </figure>
-            <article class="detallecanción">
+            <article class="class">
+                <i class="far fa-pause"></i> <i class="far fa-play"></i>
                 <h1>GOLDEN</h1>
                 <ul class="ul2">
-                    <h3><a href="artistaHarryStyles.html">HARRY STYLES</a></h3>
-                    <h3><a href="detailFineLine.html"></a>FINE LINE</h3>
-                    
+                    <li><a href="artistaHarryStyles.html">HARRY STYLES</a></li>
+                    <li><a href="detailAlbum.html"></a>FINE LINE</li>   
                 </ul>
             </article>
+        </section>
+        <section class="section5">
+            <h3>Más canciones de este estilo...</h3>
+            <article class="article5">
+                    <img src="img/albumWalls.jpg" alt="Album Walls">
+                    <ul class="ul5">
+                        <li><h2>Habit</h2></li>
+                        <li><h3>Walls</h3></li>
+                        <li><p>Louis Tomlinson</p></li>
+                    </ul>
+                </a>
+            </article>
+            <article class="article5">
+                    <img src="img/albumFutureNostalgia.jpg" alt="Album Future Nostalgia">
+                    <ul class="ul5">
+                        <li><h2>Levitating. feat Dabady</h2></li>
+                        <li><h3> Future Nostalgia</h3></li>
+                        <li><p>Dua Lipa</p></li>
+                    </ul>
+                </a>
+            </article>
+            <article class="article5">
+                    <img src="img/albumFlicker.jpg" alt="Album Flicker">
+                    <ul class="ul5">
+                        <li><h2>Slow Hands</h2></li>
+                        <li><h3>Flicker</h3></li>
+                        <li><p>Niall Horan</p></li>
+
         </section>
     </main>  
     <footer class="footer">

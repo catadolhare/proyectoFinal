@@ -52,15 +52,18 @@
   width: 90%; 
   margin: 2px;
   display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
   justify-content: center;
   align-items: center;  
 }
 .class h1{
     color:white;
-    font-size: 30px;
+    font-size: 50px;
     font-family: 'Bebas Neue';
 }
 .ul2 li a:hover{
+    font-size: 30px;
     text-decoration: white;
     text-decoration: none;
     font-family: lato;
@@ -83,18 +86,20 @@
     background-color: rgb(255, 187, 0);
     color: darkblue;
 }
-.article5{
+.section5{
+    display: flex;
+    flex-wrap: wrap;   
+    flex-direction: row;
     margin: 5%;
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: violet;
     border-radius: 3px;
-    width: 40%;   
-}
-.h3{
-    color: white;
+    width: 40%; 
+    
 }
 
+
 @media(min-width: 728px){
-    .header{
+    .encabezado{
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
@@ -105,19 +110,17 @@
     .nav{
         width: 50%;
     }
-    .section1{
-        width: 35%;
-    }
-    .eleccion{
+    
+    .opciones{
         width: 45%;
         margin: 2%;
     }
-    .secciones{
+    .section5{
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
     }
-    .secciones h2{
+    .section5 h2{
         width: 100%;
     }
 

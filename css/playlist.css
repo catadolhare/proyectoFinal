@@ -1,9 +1,10 @@
 .playlist{
     text-align: center;
 }
-.playlist h1{
+h1{
     color: white;
     font-size: 45px;
+    text-align: center;
 }
 .elegido li{
     color: white;
@@ -24,7 +25,7 @@
     margin: 2% 10%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
 }
 .favorito img{
@@ -66,22 +67,33 @@
 .sug img{
     width: 20%;
 }
+.sugerencia1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 @media(min-width: 1024px){
-    .playlist h1{
+    h1{
         font-size: 80px;
         margin: 1%;
     }
     .play{
-        margin-left: 35%;
-        margin-right: 35%;
+       width: 30%;
+       display: flex;
+       justify-content: center;
+    }
+    .playlist{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     .favorito{
-        margin-right: 30%;
-        margin-left: 30%;
+        width: 40%;
     }
     .sug{
-        margin-left: 20%;
-        margin-right: 20%;
+        justify-content: center;
     }
     .elegido{
         display: flex;
@@ -93,9 +105,14 @@
         width: 20%;
     }
     .sugerencia{
-        width: 50%;
+        width: 46%;
+        margin: 2%;
     }
     .nuevasCanciones{
         display: flex;
+    }
+    .sug{
+        margin: 1%;
+        width: 70%;
     }
 }

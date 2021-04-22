@@ -75,18 +75,22 @@ p{
 /*----- Body -----*/
 .secciones{
     text-align: center; 
+    background-color: rgb(122, 122, 122);
 }
 .nombreSeccion{
-    width: 100%;
+    margin: 2% 0%;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
     background-color: rgb(46, 46, 46);
     color: white;
 }
 .eleccion{
     text-align: center;
     margin: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .info{
     width: 100%;
@@ -96,28 +100,32 @@ p{
     background-color: rgb(145, 145, 145);
 }
 .recomendaciones{
-    background-color: rgb(121, 83, 83);
     margin: 2%;
     text-align: center;
+    background-color: rgb(121, 83, 83);
+
 }
 .nombreRec{
     width: 100%;
+    margin: 2% 0%;
     color: white;
     background-color: rgb(207, 105, 105);
     display: flex;
     align-items: center;
     justify-content: space-evenly;
 }
-.recom1{
-    display: flex;
-    align-items: center;
-}
-.recom1 li{
-    width: 45%;
+.recom{
     margin: 2%;
 }
-.recom1:hover{
+.rec{
+    margin: 3%;
+}
+.rec:hover{
     background-color: rgb(173, 104, 104);
+}
+.recomTit{
+    background-color: rgb(173, 104, 104);
+    padding: 0% 25%;
 }
 
 
@@ -174,10 +182,6 @@ p{
         flex-wrap: wrap;
         justify-content: center;
         margin: 2%;
-        background-color: rgb(184, 181, 181);
-    }
-    .secciones h2{
-        width: 100%;
     }
     .menuFooter{
         width: 100%;
@@ -190,19 +194,38 @@ p{
         width: 100%;
     }
     .logoFooter{
+        width: 100%;
+    }
+    .logoFooter img{
         width: 30%;
     }
     .recomendaciones{
-        margin: 4%;
+        margin: 2% 4%;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
     }
-    .recomendaciones h2{
-        width: 100%;
-    }
     .recom{
         width: 30%;
         margin: 1%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .rec{
+        margin: 1%;
+    }
+    .rec a{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .rec img{
+        width: 46%;
+        margin: 2%;
+    }
+    .rec h3{
+        margin: 3%;
     }
 }

@@ -5,7 +5,8 @@
 }
 .container{
     width: 100%;
-    background-color: rgb(63, 63, 63);
+    background-image: url(../img/fondo\ negro.jfif);
+    background-size: cover;
 }
 img{
     width: 100%;
@@ -17,7 +18,7 @@ li{
     list-style-type: none;
 }
 h2{
-    font-family: 'Archivo Narrow', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 30px;
     text-align: center;
     color: white;
@@ -145,6 +146,7 @@ p{
         flex-wrap: wrap;
         justify-content: center;
         margin: 2%;
+        background-color: rgb(184, 181, 181);
     }
     .secciones h2{
         width: 100%;

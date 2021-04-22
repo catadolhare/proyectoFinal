@@ -1,15 +1,8 @@
-*{
-    box-sizing:border-box; 
-     margin:0;
-     padding: 0;
-    color: white;
-    font-family: 'Montserrat', sans-serif;
-    }
-    .padre{
-        background-image: url(../img/dark-black-abstract-background-with-wood-chips.jpg);
-        background-size: cover; /* cubra toda la pantalla*/       
+.padre{
+    background-image: url(../img/dark-black-abstract-background-with-wood-chips.jpg);
+    background-size: cover; /* cubra toda la pantalla*/       
        
-    }
+}
     .section{
         background-image: url(../img/cropped-Harry-Styles.jpg); 
         background-repeat: no-repeat;

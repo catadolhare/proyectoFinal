@@ -1,6 +1,43 @@
+   
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.container{
+    width: 100%;
+    background-image: url(../img/fondo\ negro.jfif);
+    background-size: cover;
+}
+img{
+    width: 100%;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style-type: none;
+}
+h2{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    color: white;
+}
+p{
+    color: white;
+}
+.color{
+    font-size: 20px;
+    color: dimgrey;
+}
+
+
 .padre{
     background-image: url(../img/dark-black-abstract-background-with-wood-chips.jpg);
-    background-size: cover; /* cubra toda la pantalla*/       
+    background-size: cover; /* cubra toda la pantalla*/  
+      
+
        
 }
     .section{
@@ -10,6 +47,7 @@
         width: 100%; /* ancho del 100%*/
         height: 600px; /* ocupe 600px de pantalla */
        padding:2%;
+       
 
        }
        .section2{
@@ -18,6 +56,7 @@
            width: 50%; /*solo tenga ese ancho*/
            height: 600px; /* solo que tenga ese ancho */
            justify-content: center; /* para que los elementos se alineen en el centro, es decir las 3 filas*/
+          
                 }
         
        .fila1{
@@ -34,20 +73,24 @@
     }
     .fila3{
         display: flex;
-        flex-direction: row;
-       
-    }
+      }
+    .fila4{
+        display: flex;
+        width: 50%;
+        justify-content: space-between;
+        background-color: cadetblue;
+     } 
     
     .nombre{
         margin: 20px;
         font-size: 40px; /* tamaño de la letra */
     }
     .article1{
-       
+       background-color: rgba(255, 255, 255, 0.274);
         width:180px;
         height: 50px; 
         border-radius: 10px;
-        margin: 20px;
+        margin: 3% 0; /* margenes entre filas arriba y abajo*/
         display: flex;
         justify-content: center;  /* poner en el centro */
         align-items: center; /* alinear texto en el centro*/
@@ -62,111 +105,146 @@
     .article3{ display: flex;
         flex-direction: column;
         justify-content: center; /* centro el texto al mismo nivel que play artist*/
-            }
-   .article4{
-       display: flex;
+         }
+        }
+    .article4{
        margin: 20px; /* le pongo solo margin a este y no article 5  para que me queden en la misma linea que article 1 y2*/       
-   }
+       }
    .article5{
        display: flex;
        flex-direction: column;
        justify-content: center;
+       margin: 2%; /* puse margin en porcentaje para que se adapte al responsive*/
+     }
+    
+     .albumH{
+       width: 20%;
+       height: 40%;
+       margin: 2% 0;
+       
        
     }
-    .article6{
-        display: flex;
-       margin: 20px;
+    .imagendeharry{
+        width: 100%; /* 20% de la caja que la caja equivale a un 30% de la caja entera*/
+        
     }
     .article7{
-       
+        
         display: flex;
         flex-direction: column;
         justify-content: center;
+        width: 70%; /* equivale un 70% de la caja entera*/
 
     }
    h6{ color: rgba(255, 255, 255, 0.747);
        margin: 5px 0px;
-
+   }
+   h3{
+       font-size: 30px;
+       color: white;
    }
    h4{
        margin: 5px 0px;
+       color: white;
    }
+   h5{  color: rgba(255, 255, 255, 0.747);
+       margin: 5px 0px;
 
-   .biografia{
-       display: flex;
-       flex-direction: row;
-       padding: 2%;
    }
-   .bio1{
+   .F:hover{
+          text-decoration: underline ;
+          color: yellow;
+   }
+ 
+.biografia{
+    display: flex;
+    margin: 2%;
+    height: 500px;
+    
+
+}
+.bio1{
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     width: 50%;
-    background-color: khaki;
     
-     }
-     .harry{
-        display: flex;
-        width:300px;  
-        justify-content: center; 
-        text-align: justify;
-        
-        
-     }
-     .harry2{
-         margin-top: 2%;
-     }
-     .bio2{
-         display: flex;
-         flex-direction: column;
-         width: 50%;
-    background-color:lightpink;
+}
+.tituloss{
+    text-align: center;
+    background-color: rgb(46, 46, 46);
+}
+.primera{
+    background-color: rgba(255, 255, 255, 0.747);
+    height: 50%;
+}
+ 
+.harry2{
+    margin: 2%;
+}
+.segunda{
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.747);
+
+}
+.redessociales li a{
+font-size: 50px;
+
+}
+
+
+.bio2{
+    width: 50%; 
     
-     }
+   }
+.segundafila{
+    height: 400px; /* para mantener alineadas las fotos*/
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+  flex-direction: row;
+  
+   
     
-   .primerafila{
-       display: flex;
-       justify-content: center;
-       justify-content:space-around;
-       background-color: lightseagreen;
-   }
-   .segundafila{
-       display: flex;
-       justify-content: center;
-       justify-content: space-around;
-       background-color: limegreen;
-   }
-   .tercerafila{
-       display: flex;
-       flex-direction: column;
-       background-color: magenta;
-   }
-   .cuartafila{
-       display: flex;
-       flex-direction: column;
+}
+.imagencancion{
+    width: 60%;
+    height: 70%;
+    border-radius: 150px;
+    text-align: center;
+}
 
-   }
-   .años{ background-color: maroon;
 
-   }
-   .estilosmusicales{ background-color: mediumblue;
+.topcinco{
+    width: 30%;
+    height: 50%;
+    text-align: center;
+    margin: 2% 0;
 
-   }
-  .instrumento{ background-color:red;
+}
+.topcinco:hover{
+    background-color: rgba(255, 255, 255, 0.747);
+}
 
-  }
-  .discografias{ 
-      background-color: olive;
-
-  }
-  .redes{
-      background-color: black
-  }
-  .similar{
-      background-color: powderblue;
-
-  }
-    .famosos{
-
-    }
-    
-    
+.footer{
+    background-color: black;
+    text-align: center;
+    width: 100%; 
+    margin-top: 2%;
+}
+.nombres{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 2%;
+}
+.nombres li{
+    color: white;
+}
+.menuFooter{
+    margin: 2%;
+}
+.buscadorFooter{
+    margin: 2%;
+}
+/*-----------*/

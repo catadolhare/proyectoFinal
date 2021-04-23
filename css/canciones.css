@@ -57,18 +57,6 @@
     .container{
         width: 85%;
     }
-    .encabezado{
-        display: flex;
-        justify-content: space-around;
-        background-color: grey;
-    }
-    .nav{
-        width: 40%;
-    }
-    .opciones{
-        width: 45%;
-        margin: 2%;
-    }
     .section5{
         display: flex;
         flex-wrap: wrap;
@@ -91,12 +79,6 @@
     }
     .container{
         width: 100%;
-    }
-    .opciones{
-        width: 45%;
-        margin: 2%;
-        display: flex;
-        justify-content: space-between;   
     }
     .main2{
         display: flex;

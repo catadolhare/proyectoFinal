@@ -1,53 +1,7 @@
-*{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    font-family: 'Montserrat', sans-serif;
-}
-img{
-    width: 100%;
-}
-a,li,h1,h4,h5,h6,p{
-    font-family: 'Lato', sans-serif;
-    color: white;
-    text-decoration: none;
-}
-
-h2{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 30px;
-    text-align: center;
-    color: white;
-}
 
 h3{
-    font-family: 'Open Sans', sans-serif;
     color:black;
 }
-.encabezado{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;    
-    height: 10%;
-}
-.logo{
-    width: 15%;
-}
-.menu{
-    width: 40%;
-}
-.buscador{
-    width: 42%;
-    margin: 2%;
-}
-.formulario{
-    width: 100%;
-}
-.buscador input{
-    width: 100%;
-}
-
-
 .container{
     width: 100%;
     height: 100vh;

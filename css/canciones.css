@@ -23,79 +23,44 @@
     height: 25px;
     margin: 10px; 
 }
-.ul{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: flex-start;
-}
-.ul li a{
-    color: blanchedalmond;
-    font-family: 'Lato', sans-serif;
-}
-.ul li a:hover{
-    text-decoration: underline;
-    color: rgb(245, 245, 60);
+.class{
+    color: white;
+    
 }
 .main2{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    margin: 0% 15%;
-    
+    justify-content: center;   
 }
 .detailcanción{
- width: 90%;
+ width: 100%;
+ display: flex;
+ flex-wrap: wrap;
+ flex-direction: row;
+ align-items: center;
 }
 
 .fotoalbum{
   width: 90%; 
-  margin: 2px;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;  
 }
 .class h1{
     color:white;
-    font-size: 50px;
+    font-size: 70px;
     font-family: 'Bebas Neue';
 }
 .ul2 li a:hover{
     font-size: 30px;
     text-decoration: white;
-    text-decoration: none;
-    font-family: lato;
-}
-.playlist{
-    list-style: none;
+    font-family: lato;  
     display: flex;
-    justify-content: center;
-    margin: 1%;
-}
-.playlist li a{
-    text-decoration: none;
-    background-color:rgb(116, 192, 243);
-    color:rgb(252, 232, 232);
-    padding: 10px;
-    margin: 10px;
-}
-.playlist li a:hover{
-    text-decoration: underline;
-    background-color: rgb(255, 187, 0);
-    color: darkblue;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
 }
 .section5{
-    display: flex;
-    flex-wrap: wrap;   
-    flex-direction: row;
-    margin: 5%;
-    background-color: violet;
-    border-radius: 3px;
-    width: 40%; 
     
 }
+
 
 
 @media(min-width: 728px){
@@ -118,10 +83,15 @@
     .section5{
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: space-around;
     }
     .section5 h2{
-        width: 100%;
+        width: 50%;
+    }
+    .article5{
+        width: 30%;
+        margin: 1%;
+        justify-content: space-around;
     }
 
 }
@@ -131,12 +101,6 @@
         flex-wrap: wrap;
         justify-content: center;
         flex-direction: row;
-    }
-    .playlist{
-        flex-direction: row;
-    }
-    .playlist li a{
-        padding: 20px 70px;
     }
     .detailcancion{
         display: flex;
@@ -148,13 +112,14 @@
     .fotoalbum{
         width: 50%;
     }
-    .detallecanción{
+    .detallecancion{
         width: 50%;
     }
     .detallecanción h1{
         font-size: 118px;
     }
     .detallecanción h3{
+        width: 100%;
         font-size: 30px;
     }
 }

@@ -4,13 +4,41 @@
     margin: 0;
     font-family: 'Montserrat', sans-serif;
 }
+img{
+    width: 100%;
+}
+a{
+    font-family: 'Lato', sans-serif;
+    color: white;
+    text-decoration: none;
+}
+li{
+    list-style-type: none;
+    font-family: 'Lato', sans-serif;
+    color: white;
+}
+h1{
+    font-family: 'Bebas Neue', cursive;
+    columns: white;
+}
+h2{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    color: white;
+}
+h3{
+    font-family: 'Open Sans', sans-serif;
+    color:black;
+}
+h4, h5, h6, p{
+    font-family: 'Lato', sans-serif;
+    color: white;
+}
 .container{
     width: 100%;
-    height: 100vh;
+    height: 100vh; /* 100% el area de visualizacion */
     background-image: url(../img/fondo\ negro.jfif);
-    background-position: center;
-    background-position: cover;
-
 }
 
 
@@ -21,10 +49,11 @@ align-items: center;
 height: 88%;} /* pongo height 88%  para que ocupe eso en la pantalla*/
 
 .columna1{
-    color:whitesmoke; 
+    color:white; 
     font-size: 50px; 
     width: 35%;
-    margin: 10%;  /* sin el margen se desordenan las imagenes de la columna 2*/
+    margin: 0 10%;  /* sin el margen se desordenan las imagenes de la columna 2*/
+   
    
 
 }
@@ -40,11 +69,11 @@ height: 88%;} /* pongo height 88%  para que ocupe eso en la pantalla*/
 }
 .genero1{
     background-image: url(../img/Pop.jpg);
-    background-position: center;
-    background-position: cover;
+    background-position: center;  /* pongo esto para que la imagen este centrada*/
     width: 200px;
     height: 200px; 
    text-align: center;
+   margin: 2%;
  
    
    
@@ -53,30 +82,24 @@ height: 88%;} /* pongo height 88%  para que ocupe eso en la pantalla*/
 .genero2{
     background-image: url(../img/Electronica__1_.jpg);
     background-position: center;
-    background-position: cover;
     width: 200px;
     height: 200px; 
     text-align: center;
     margin: 2%;
-    
     
 
 }
 .genero3{
     background-image: url(../img/historia-del-rock-and-roll-1280x720.jpg);
     background-position: center;
-    background-position: cover;
     width: 200px;
     height: 200px; 
     text-align: center;
     margin: 2%;
-    
-
 }
 .genero4{
     background-image: url(../img/sarahtheillstrumentalist.jpg);
     background-position: center;
-    background-position: cover;
     width: 200px;
     height: 200px; 
     text-align: center;
@@ -87,7 +110,6 @@ height: 88%;} /* pongo height 88%  para que ocupe eso en la pantalla*/
 .genero5{
     background-image: url(../img/Acoustic.jfif);
     background-position: center;
-    background-position: cover;
     width: 200px;
     height: 200px; 
     text-align: center;
@@ -96,8 +118,8 @@ height: 88%;} /* pongo height 88%  para que ocupe eso en la pantalla*/
 
 }
 .genero6{
-    background-image: url(../img/punk\ 2.webp);
-    background-position: cover;
+    background-image: url(../img/indie.webp);
+    background-position:center;
     width: 200px;
     height: 200px; 
     text-align: center;
@@ -114,11 +136,4 @@ h3{
     width: 200px; 
     margin: 10px;
     height: 200px;
-}
-@media(min-width: 420px){
- .contenido{
-     display: flex;
-     flex-wrap: wrap;
-     background-color: darkkhaki;
- }
 }

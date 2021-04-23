@@ -1,0 +1,154 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.container{
+    width: 100%;
+    background-color: black;
+}
+img{
+    width: 100%;
+}
+a{
+    font-family: 'Lato', sans-serif;
+    color: white;
+    text-decoration: none;
+}
+li{
+    list-style-type: none;
+    font-family: 'Lato', sans-serif;
+    color: white;
+}
+h1{
+    font-family: 'Bebas Neue', cursive;
+    columns: white;
+}
+h2{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    color: white;
+}
+h3{
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+}
+h4, h5, h6, p{
+    font-family: 'Lato', sans-serif;
+    color: white;
+}
+
+
+.cajaprincipal{
+    background-image: url(../img/fondo\ negro.jfif);
+    text-align: center;
+}
+.derecha{
+    margin: 2%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fotopop{
+    width: 95%;
+    margin: 2%;
+}
+.izquierda{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    margin: 1% 2%;
+}
+.recomendaciones{
+    margin: 2%;
+    text-align: center;
+    background-color: rgb(121, 83, 83);
+
+}
+.nombreRec{
+    width: 100%;
+    margin: 2% 0%;
+    color: white;
+    background-color: rgb(207, 105, 105);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.recom{
+    margin: 2%;
+}
+.rec{
+    margin: 3%;
+}
+.rec:hover{
+    background-color: rgb(173, 104, 104);
+}
+.recomTit{
+    background-color: rgb(173, 104, 104);
+    padding: 0% 25%;
+}
+@media(min-width: 1024px){
+    .pop{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .derecha{
+        width: 43%;
+        margin: 1%;}
+
+        .titulopop{
+            color: blanchedalmond;
+    font-size: 65px; ;
+        }
+        .recomendaciones{
+            margin: 2% 4%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .recom{
+            width: 30%;
+            margin: 1%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+        }
+        .rec{
+            margin: 1%;
+        }
+        .rec a{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .rec img{
+            width: 46%;
+            margin: 2%;
+        }
+        .rec h3{
+            margin: 3%;
+        }
+        .menuFooter{
+            width: 100%;
+        }
+        .buscadorFooter{
+            width: 95%;
+            margin: 2%;
+        }
+        .buscadorFooter input{
+            width: 100%;
+        }
+        .logoFooter{
+            width: 100%;
+        }
+        .logoFooter img{
+            width: 30%;
+        }
+}

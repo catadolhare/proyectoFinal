@@ -1,8 +1,4 @@
-.encabezado{
-    background-color: rgb(59, 59, 59);
-    text-align: center;
-    width: 100%;
-}
+
 .noresults{
     display: none;
 }
@@ -34,7 +30,6 @@ h3{
     margin: 1%;
 }
 
-
 @media(min-width: 420px){
     .logo{
         width: 15%;
@@ -44,9 +39,8 @@ h3{
     }
     .encabezado{
         display: flex;
-        flex-direction: row;
         justify-content: space-between;
-        align-items: center;
+        
     }
     .buscador{
         width: 42%;

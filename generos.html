@@ -5,39 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GENEROS DISPONIBLES</title>
-    <link rel="stylesheet" href="css/index.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital@1&family=Train+One&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:wght@300&family=Montserrat:wght@100&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/genero.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
   <main class="container">
-      <header class="encabezado">
+    <header class="encabezado">
         <figure class="logo">
             <a href="index.html">
-                <img src="img/logoMusicWave.JPG" alt="Logo Music Wave">
+                <img src="img/logoMusicWave.png" alt="Logo Music Wave">
             </a>
         </figure>
-        <a href="searchResults.html">
-            <nav class="buscador">
-                <i class="fas fa-search"></i>
-                <h5>Buscar</h5>
-            </nav>
-        </a>
+        <nav class="buscador">
+            <form action="searchResults.html" method="GET" class="formulario">
+                <input type="text" name="buscar" id="buscar" placeholder="Buscar">
+            </form>
+        </nav>
         <article class="menu">
             <ul class="opciones">
+                <li><a href="generos.html">Géneros</a></li>
                 <li><a href="personalPlaylist.html">Mi Playlist</a></li>
                 <li><a href="login.html">Login</a></li>
                 <li><a href="registrarse.html">Registrarse</a></li>
             </ul>
         </article>
     </header>
-      <section class="contenido">
+    <section class="contenido">
               <h1 class="columna1">
                   GÉNEROS DISPONIBLES
               </h1>
@@ -64,20 +60,29 @@
             </section>
         </section>
         <footer class="footer">
-            <section class="nuestrosNombres">
+            <article class="nuestrosNombres">
                 <ul class="nombres">
                     <li>Catalina Dolhare</li>
                     <li>Violeta de Lella</li>
                     <li>Renata Lamas</li>
                 </ul>
-            </section>
-            <article class="menu">
+            </article>
+            <article class="menuFooter">
                 <ul class="opciones">
+                    <li><a href="generos.html">Géneros</a></li>
                     <li><a href="personalPlaylist.html">Mi Playlist</a></li>
                     <li><a href="login.html">Login</a></li>
-                    <li><a href="registrarse.html">Registrarse</a></li>
+                    <li><a href="#">Registrarse</a></li>
                 </ul>
             </article>
+            <nav class="buscadorFooter">
+                <form action="searchResults.html" method="GET" class="formulario">
+                    <input type="text" name="buscar" id="buscar" placeholder="Buscar">
+                </form>
+            </nav>
+            <figure class="logoFooter">
+                <a href="index.html"><img src="img/logoMusicWave.png" alt="Music Wave"></a>
+            </figure>
         </footer>
     </main>
   </div>

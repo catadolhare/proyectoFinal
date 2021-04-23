@@ -1,7 +1,11 @@
 .encabezado{
-    background-color: grey;
+    background-color: rgb(59, 59, 59);
+    text-align: center;
+    width: 100%;
 }
-
+.noresults{
+    display: none;
+}
 h1{
     color: white;
     font-family: Bebas neue;

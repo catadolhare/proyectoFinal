@@ -23,7 +23,7 @@ img{
 }
 .opcionesPlaylist li a{
     text-decoration: none;
-    background-color:rgb(116, 192, 243);
+    background-color:rgb(5, 235, 5);
     color:rgb(252, 232, 232);
     padding: 10px;
     margin: 10px;
@@ -31,7 +31,7 @@ img{
 }
 .opcionesPlaylist li a:hover{
     text-decoration: underline;
-    background-color: rgb(255, 187, 0);
+    background-color: rgb(238, 234, 4);
     color: darkblue;
 }
 .informacionAlbum{

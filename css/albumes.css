@@ -69,13 +69,17 @@ img{
     text-decoration: underline;
     color: rgb(255, 187, 0);
 }
-.recomAlbum{
+.recomAlbum{;
     margin: 5%;
     border-radius: 3px;
     background-color: rgb(121, 83, 83);
+    display: flex;
+    flex-direction:column;
+    align-items: center;
 }
 .recomAlbum1{
-    margin: 5%;
+    margin: 2%;
+    width: 90%;
 }
 
 @media(min-width: 1024px){

@@ -25,7 +25,6 @@
 }
 .class{
     color: white;
-    
 }
 .main2{
     display: flex;
@@ -36,12 +35,12 @@
  width: 100%;
  display: flex;
  flex-wrap: wrap;
- flex-direction: row;
+ flex-direction: column;
  align-items: center;
 }
 
 .fotoalbum{
-  width: 90%; 
+  width: 50%; 
 }
 .class h1{
     color:white;
@@ -51,23 +50,34 @@
 .ul2 li a:hover{
     font-size: 30px;
     text-decoration: white;
+    text-decoration: none;
     font-family: lato;  
+}
+
+.section5{
+    margin: 10%;
+    border-radius: 3px;
+    width: 100%;  
+      
+}
+.article5{
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: space-around;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: pink;
+    width: 30%; 
+    margin: 1%;   
 }
-.section5{
-    
-}
 
 
 
-@media(min-width: 728px){
+@media(min-width: 420px){
     .encabezado{
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
+        justify-content: center;
     }
     .logo{
         width: 15%;

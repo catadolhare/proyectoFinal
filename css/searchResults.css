@@ -22,7 +22,63 @@ h3{
 .POP{
     text-align: center;
     color: white;
-    font-family: lato;
-    background-color: violet;    
+    font-family: lato;   
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 1%;
 }
+
+
+@media(min-width: 1024px){
+    .encabezado{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .logo{
+        width: 15%;
+    }
+    .menu{
+        width: 40%;
+    }
+    .buscador{
+        width: 42%;
+        margin: 2%;
+    }
+    .formulario{
+        width: 100%;
+    }
+    .buscador input{
+        width: 100%;
+    }
+    .POP{
+        width: 18%;
+        margin: 1%;
+    }
+    .generopop{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 2%;
+    }
+    .menuFooter{
+        width: 100%;
+    }
+    .buscadorFooter{
+        width: 95%;
+        margin: 2%;
+    }
+    .buscadorFooter input{
+        width: 100%;
+    }
+    .logoFooter{
+        width: 100%;
+    }
+    .logoFooter img{
+        width: 30%;
+    }
+}
+
 

@@ -5,8 +5,7 @@
 }
 .container{
     width: 100%;
-    background-image: url(../img/fondo\ negro.jfif);
-    background-size: cover;
+    background-color: black;
 }
 img{
     width: 100%;
@@ -80,12 +79,12 @@ h4, h5, h6, p{
     flex-direction: column;
     align-items: center;
 }
+.eleccion:hover{
+    background-color: rgb(145, 145, 145);
+}
 .info{
     width: 100%;
     list-style: none;
-}
-.eleccion:hover{
-    background-color: rgb(145, 145, 145);
 }
 .recomendaciones{
     margin: 2%;
@@ -115,8 +114,6 @@ h4, h5, h6, p{
     background-color: rgb(173, 104, 104);
     padding: 0% 25%;
 }
-
-
 /*-----------*/
 
 /*------ Footer -------*/
@@ -171,22 +168,6 @@ h4, h5, h6, p{
         justify-content: center;
         margin: 2%;
     }
-    .menuFooter{
-        width: 100%;
-    }
-    .buscadorFooter{
-        width: 95%;
-        margin: 2%;
-    }
-    .buscadorFooter input{
-        width: 100%;
-    }
-    .logoFooter{
-        width: 100%;
-    }
-    .logoFooter img{
-        width: 30%;
-    }
     .recomendaciones{
         margin: 2% 4%;
         display: flex;
@@ -215,5 +196,21 @@ h4, h5, h6, p{
     }
     .rec h3{
         margin: 3%;
+    }
+    .menuFooter{
+        width: 100%;
+    }
+    .buscadorFooter{
+        width: 95%;
+        margin: 2%;
+    }
+    .buscadorFooter input{
+        width: 100%;
+    }
+    .logoFooter{
+        width: 100%;
+    }
+    .logoFooter img{
+        width: 30%;
     }
 }

@@ -1,6 +1,7 @@
 .encabezado{
-    background-image: url(../img/fondo\ negro.jfif);
+    background-color: grey;
 }
+
 h1{
     color: white;
     font-family: Bebas neue;
@@ -30,18 +31,18 @@ h3{
 }
 
 
-@media(min-width: 1024px){
+@media(min-width: 420px){
+    .logo{
+        width: 15%;
+    }
+    .menu{
+        width: 85%;
+    }
     .encabezado{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-    }
-    .logo{
-        width: 15%;
-    }
-    .menu{
-        width: 40%;
     }
     .buscador{
         width: 42%;
@@ -79,6 +80,27 @@ h3{
     .logoFooter img{
         width: 30%;
     }
+}
+
+@media(min-width: 1024px){
+    .menu{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .POP{
+        width: 33%;
+        margin: 1%;
+    }
+    .generopop{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 2%;
+    }
+    
+    
 }
 
 

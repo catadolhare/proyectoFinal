@@ -116,7 +116,7 @@ height: 88%;} /* pongo height 88%  para que ocupe eso en la pantalla*/
     height: 200px; 
     text-align: center;
     margin: 2%;
-   +
+   
 
 }
 .genero6{
@@ -164,6 +164,7 @@ h3{
     display: flex;
     justify-content: center;
     align-items: center;
+}
 }
 
 

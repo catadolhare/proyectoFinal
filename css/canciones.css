@@ -73,17 +73,22 @@
 
 
 @media(min-width: 420px){
+    
+    .logo{
+        width: 15%;
+    }
+    .container{
+        width: 85%;
+    }
     .encabezado{
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
-        justify-content: center;
+        justify-content: space-around;
     }
-    .logo{
-        width: 15%;
-    }
+    
     .nav{
-        width: 50%;
+        width: 40%;
     }
     
     .opciones{
@@ -106,6 +111,20 @@
 
 }
 @media(min-width: 1024px){
+    .logo{
+        width: 15%;
+    }
+    .container{
+        width: 85%;
+    }
+    .me
+    .opciones{
+        width: 45%;
+        margin: 2%;
+        display: flex;
+        justify-content: space-between;
+        
+    }
     .main2{
         display: flex;
         flex-wrap: wrap;

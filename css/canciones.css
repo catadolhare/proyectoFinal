@@ -7,7 +7,7 @@
     width: 100%;
     background-color: black;
     text-align: center;
-    background-image: url(../img/fondo\ negro.jfif);
+    
 }
 .header{
     background-color: black;
@@ -40,10 +40,13 @@
 }
 
 .fotoalbum{
-  width: 50%; 
+  width: 80%; 
+}
+.class{
+    background-color: gray;
 }
 .class h1{
-    color:white;
+    color: blanchedalmond;
     font-size: 70px;
     font-family: 'Bebas Neue';
 }
@@ -65,7 +68,6 @@
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
-    background-color: pink;
     width: 30%; 
     margin: 1%;   
 }
@@ -82,15 +84,12 @@
     }
     .encabezado{
         display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
         justify-content: space-around;
+        background-color: grey;
     }
-    
     .nav{
         width: 40%;
     }
-    
     .opciones{
         width: 45%;
         margin: 2%;
@@ -99,6 +98,7 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
+        
     }
     .section5 h2{
         width: 50%;
@@ -115,9 +115,8 @@
         width: 15%;
     }
     .container{
-        width: 85%;
+        width: 100%;
     }
-    .me
     .opciones{
         width: 45%;
         margin: 2%;

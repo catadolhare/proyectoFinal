@@ -5,7 +5,11 @@ img{
     text-align: center;
 }
 .album{
-    width: 100%;
+    margin: 2%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
 }
 .foto{
     width: 95%;
@@ -15,7 +19,7 @@ img{
     list-style: none;
     display: flex;
     justify-content: center;
-    margin: 1%;
+    margin: 2%;
 }
 .opcionesPlaylist li a{
     text-decoration: none;
@@ -36,7 +40,6 @@ img{
     flex-direction: column;
     align-items: center;
     margin: 1% 2%;
-    background-color: rgba(255, 255, 255, 0.3);
 }
 .informacionAlbum h1{
     color: blanchedalmond;
@@ -68,15 +71,15 @@ img{
 }
 .recomAlbum{
     margin: 5%;
-    background-color: rgb(121, 83, 83);
     border-radius: 3px;
+    background-color: rgb(121, 83, 83);
 }
 .recomAlbum1{
     margin: 5%;
 }
 
 @media(min-width: 1024px){
-    .principal{
+    .albumInf{
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
@@ -89,16 +92,15 @@ img{
         padding: 10px 40px;
     }
     .album{
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        width: 45%;
+        width: 43%;
+        margin: 1%;
     }
-    .foto{
+    .album img{
         width: 100%;
     }
     .informacionAlbum{
-        width: 50%;
+        width: 45%;
+        background-color: rgba(255, 255, 255, 0.3);
     }
     .informacionAlbum h1{
         font-size: 120px;
@@ -119,6 +121,7 @@ img{
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+        align-items: center;
         margin: 2%;
     }
     .recomAlbum h3{
@@ -128,6 +131,9 @@ img{
     .recomAlbum1{
         width: 25%;
         margin: 3%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     .recomAlbum1:hover{
         background-color: rgb(173, 104, 104);

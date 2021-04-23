@@ -21,6 +21,9 @@ h1{
     display: flex;
     justify-content: center;
 }
+.play:hover{
+    background-color: rgb(238, 234, 4);
+}
 .favorito{
     margin: 2% 10%;
     display: flex;
@@ -36,6 +39,9 @@ h1{
     text-align: justify;
     margin: 2%;
 }
+.favorito:hover{
+    background-color: rgb(145, 145, 145);
+}
 .sugCancion{
     width: 56%;
     margin: 2%;
@@ -45,6 +51,9 @@ h1{
     background-color: rgb(5, 235, 5);
     padding: 5px;
     border-radius: 7px;
+}
+.sug h5:hover{
+    background-color: rgb(238, 234, 4);
 }
 .sugCancion li{
     color: white;
@@ -66,6 +75,9 @@ h1{
 }
 .sug img{
     width: 20%;
+}
+.sug:hover{
+    background-color:  rgb(173, 104, 104);
 }
 .sugerencia1{
     display: flex;

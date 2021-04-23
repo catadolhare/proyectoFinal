@@ -63,6 +63,9 @@ h4, h5, h6, p{
 .secciones{
     text-align: center; 
     background-color: rgb(122, 122, 122);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .nombreSeccion{
     margin: 2% 0%;
@@ -74,7 +77,8 @@ h4, h5, h6, p{
 }
 .eleccion{
     text-align: center;
-    margin: 10%;
+    width: 80%;
+    margin: 2% 0%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -103,9 +107,13 @@ h4, h5, h6, p{
 }
 .recom{
     margin: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .rec{
     margin: 3%;
+    width: 90%;
 }
 .rec:hover{
     background-color: rgb(173, 104, 104);
@@ -163,10 +171,11 @@ h4, h5, h6, p{
         margin: 1%;
     }
     .secciones{
-        display: flex;
+        flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
-        margin: 2%;
+        align-items: flex-start;
+        margin: 0% 2%;
     }
     .recomendaciones{
         margin: 2% 4%;
@@ -177,9 +186,6 @@ h4, h5, h6, p{
     .recom{
         width: 30%;
         margin: 1%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
         justify-content: space-around;
     }
     .rec{

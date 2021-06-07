@@ -18,7 +18,7 @@ fetch('https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart')
         console.log(dataCharts.albums.data[i].artist.name);
         console.log(dataCharts.albums.data[i].id);
         seccionAlbum.innerHTML = `<article class="eleccion">
-        <a href="detailAlbum.html?id='${dataCharts.albums.data[i].id}'"><img src="${dataCharts.albums.data[i].cover_big}" alt="Album ${dataCharts.albums.data[i].title}"><ul class="info"><li><h2>${dataCharts.albums.data[i].title}</h2></li><li><p>${dataCharts.albums.data[i].artist.name}</p></li></ul></a></article>`
+        <a href="detailAlbum.html?id=${dataCharts.albums.data[i].id}"><img src="${dataCharts.albums.data[i].cover_big}" alt="Album ${dataCharts.albums.data[i].title}"><ul class="info"><li><h2>${dataCharts.albums.data[i].title}</h2></li><li><p>${dataCharts.albums.data[i].artist.name}</p></li></ul></a></article>`
     }
     //Artista
     for(let i=0; i<5; i++){

@@ -26,3 +26,35 @@ fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/album/${id}`)
     duracion.innerHTML += `${dataAlbum.duration} segundos`
 })
 .catch(error => console.log(error))
+
+//Agregar album a favoritos
+let agregarSacar = document.getElementById('agregarSacar')
+let cancionesFavAlbum = []
+
+let traerCancionesAlbum = localStorage.getItem('cancionesFavAlbum')
+console.log(traerCancionesAlbum);
+
+if(traerCancionesAlbum != null){
+    cancionesFavAlbum = JSON.parse(traerCancionesAlbum)
+}
+
+if(cancionesFavAlbum.includes(id)){
+    agregarSacar.innerHTML = 'Eliminar de mi playlist'
+}
+
+agregarSacar.addEventListener('click', function(e){
+    e.preventDefault();
+
+    if(cancionesFavAlbum.includes(id)){
+        let cancionAlbumPosicion = cancionesFavAlbum.indexOf(id);
+        cancionesFavAlbum.splice(cancionAlbumPosicion, 1);
+        agregarSacar.innerHTML = 'Agregar a mi playlist'
+    } else {
+        cancionesFavAlbum.push(id);
+        agregarSacar.innerHTML = 'Eliminar de mi playlist'
+    }
+
+    let cancionAlbumString = JSON.stringify(cancionesFavAlbum);
+    localStorage.setItem('cancionesFavAlbum', cancionAlbumString)
+    console.log(localStorage);
+})

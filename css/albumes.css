@@ -45,20 +45,22 @@ img{
     color: blanchedalmond;
     font-size: 65px;
 }
-.informacionAlbum h2{
+.informacionAlbum h2 a{
     font-size: 25px;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
 }
-.informacionAlbum a h2{
+.informacionAlbum h2 a{
     text-decoration: none;
 }
-.informacionAlbum a h2:hover{
+.informacionAlbum h2 a:hover{
     text-decoration: underline;
     color: rgb(255, 187, 0);
 }
-.informacionAlbum h3{
+.informacionAlbum h3 a{
     font-size: 15px;
 }
-.informacionAlbum a h3:hover{
+.informacionAlbum h3 a:hover{
     text-decoration: underline;
     color: rgb(255, 187, 0);
 }

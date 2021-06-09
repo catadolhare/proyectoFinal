@@ -3,11 +3,12 @@ let cancionAlbumFav = localStorage.getItem('cancionesFavAlbum')
 let arrayFavAlbum = JSON.parse(cancionAlbumFav)
 let listaCanciones = document.querySelector('.playlist')
 let play = document.querySelector('.play')
+let vacio = document.getElementById('vacio')
 
 if(arrayFavAlbum.length === 0){
     play.style.display = 'none'
-    listaCanciones.innerHTML = `<h4>No tiene ninguna cancion en su playlist, empiece a agregar ahora!</h4>`
 } else {
+    vacio.style.display = 'none'
     for(let i=0; i<arrayFavAlbum.length; i++){
         fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/album/${arrayFavAlbum[i]}`)
         .then(respuesta =>{

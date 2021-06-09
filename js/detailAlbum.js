@@ -8,6 +8,7 @@ let publicacion = document.getElementById('publicacion')
 let canciones = document.querySelector('.canciones')
 let duracion = document.getElementById('duracion')
 
+console.log(localStorage);
 fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/album/${id}`)
 .then(respuesta =>{
     return respuesta.json()

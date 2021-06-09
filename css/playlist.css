@@ -27,6 +27,27 @@ h1{
 .play:hover{
     background-color: rgb(238, 234, 4);
 }
+.vacio{
+    background-color: rgb(59, 59, 59);
+    width: 60%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.vacio h2{
+    margin: 3%;
+}
+.vacio h3{
+    margin: 1%;
+}
+.volverInicio{
+    color: white;
+    background-color: rgb(5, 235, 5);
+    width: 10%;
+    border-radius: 5px;
+}
 .favorito{
     width: 80%;
     margin: 2% 0%;

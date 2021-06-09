@@ -18,7 +18,7 @@ fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/album/${id}`)
     cover.innerHTML = `<img src="${dataAlbum.cover_big}" alt="Album ${dataAlbum.title}"></img>`
     titulo.innerHTML = `${dataAlbum.title}`
     artista.innerHTML = `<a href="detailArtista.html?id=${dataAlbum.artist.id}">${dataAlbum.artist.name}</a>`
-    genero.innerHTML = `<a href="detailGenero.html?id=${dataAlbum.genres.data.id}">${dataAlbum.genres.data.id}</a>`
+    genero.innerHTML = `<a href="detailGenero.html?id=${dataAlbum.genres.data[0].id}">${dataAlbum.genres.data[0].name}</a>`
     publicacion.innerHTML += `${dataAlbum.release_date}`
     //console.log(dataAlbum.tracks.data.length);
     for(let i=0; i<dataAlbum.tracks.data.length; i++){

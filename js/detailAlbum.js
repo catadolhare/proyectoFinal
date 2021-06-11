@@ -7,6 +7,7 @@ let genero = document.querySelector('h3')
 let publicacion = document.getElementById('publicacion')
 let canciones = document.querySelector('.canciones')
 let duracion = document.getElementById('duracion')
+let player = document.getElementById('player')
 
 console.log(localStorage);
 fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/album/${id}`)
@@ -25,6 +26,7 @@ fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/album/${id}`)
         canciones.innerHTML += `<li><a href="detailCancion.html?id=${dataAlbum.tracks.data[i].id}">${dataAlbum.tracks.data[i].title}</a></li>`
     }
     duracion.innerHTML += `${dataAlbum.duration} segundos`
+    player.innerHTML = `<iframe title="deezer-widget" src="https://widget.deezer.com/widget/dark/album/${dataAlbum.id}" width="100%" height="300" frameborder="0" allowtransparency="true" allow="encrypted-media; clipboard-write"></iframe>`
 })
 .catch(error => console.log(error))
 

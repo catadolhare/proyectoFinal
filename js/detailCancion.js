@@ -5,6 +5,7 @@ let tituloHead = document.querySelector('title')
 let titulo = document.querySelector('h1')
 let artista = document.getElementById('artista')
 let album = document.getElementById('album')
+let player = document.getElementById('player')
 
 fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/track/${id}`)
 .then(respuesta =>{
@@ -16,6 +17,7 @@ fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/track/${id}`)
     titulo.innerHTML = dataCancion.title
     artista.innerHTML = `<a href="detailArtista.html?id=${dataCancion.artist.id}">${dataCancion.artist.name}</a>`
     album.innerHTML = `<a href="detailAlbum.html?${dataCancion.album.id}">${dataCancion.album.title}</a>`
+    player.innerHTML = `</li><iframe title="deezer-widget" src="https://widget.deezer.com/widget/dark/track/${dataCancion.id}" width="100%" height="300" frameborder="0" allowtransparency="true" allow="encrypted-media; clipboard-write"></iframe>`
 })
 .catch(error => console.log(error))
 

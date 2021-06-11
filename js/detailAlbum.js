@@ -22,7 +22,7 @@ fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/album/${id}`)
     publicacion.innerHTML += `${dataAlbum.release_date}`
     //console.log(dataAlbum.tracks.data.length);
     for(let i=0; i<dataAlbum.tracks.data.length; i++){
-        canciones.innerHTML = `<li><a href="detailCancion.html?id=${dataAlbum.tracks.data[i].id}">${dataAlbum.tracks.data[i].title}</a></li>`
+        canciones.innerHTML += `<li><a href="detailCancion.html?id=${dataAlbum.tracks.data[i].id}">${dataAlbum.tracks.data[i].title}</a></li>`
     }
     duracion.innerHTML += `${dataAlbum.duration} segundos`
 })

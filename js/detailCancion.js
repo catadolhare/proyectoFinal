@@ -16,7 +16,7 @@ fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/track/${id}`)
     tituloHead.innerHTML = dataCancion.title
     titulo.innerHTML = dataCancion.title
     artista.innerHTML = `<a href="detailArtista.html?id=${dataCancion.artist.id}">${dataCancion.artist.name}</a>`
-    album.innerHTML = `<a href="detailAlbum.html?${dataCancion.album.id}">${dataCancion.album.title}</a>`
+    album.innerHTML = `<a href="detailAlbum.html?id=${dataCancion.album.id}">${dataCancion.album.title}</a>`
     player.innerHTML = `</li><iframe title="deezer-widget" src="https://widget.deezer.com/widget/dark/track/${dataCancion.id}" width="100%" height="300" frameborder="0" allowtransparency="true" allow="encrypted-media; clipboard-write"></iframe>`
 })
 .catch(error => console.log(error))
@@ -25,9 +25,7 @@ fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/track/${id}`)
 let agregarSacar = document.getElementById('agregarSacar')
 let cancionesFavoritas = []
 
-let traerCancionesFavoritas = localStorage.getItem('cancionesFavoritas')
-let traerCancionesAlbum = localStorage.getItem('cancionesFavAlbum')//me trae el id del album
-console.log(cancionesFavoritas);
+let traerCancionesFavoritas = localStorage.getItem('favoritas')
 
 if(traerCancionesFavoritas != null){
     cancionesFavoritas = JSON.parse(traerCancionesFavoritas)
@@ -50,6 +48,6 @@ agregarSacar.addEventListener('click',function(e){
     }
 
     let cancionFavString = JSON.stringify(cancionesFavoritas)
-    localStorage.setItem('cancionesFavoritas', cancionFavString)
+    localStorage.setItem('favoritas', cancionFavString)
     console.log(localStorage);
 })

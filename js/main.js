@@ -1,3 +1,19 @@
+//Buscador
+let form = document.querySelector('form')
+let buscar = document.querySelector('[name=buscar]')
+
+form.addEventListener('submit', function(e){
+    e.preventDefault();
+    if(buscar.value === ''){
+        alert('El buscador no puede estar vacio')
+    } else if(buscar.value.length < 3) {
+        alert('El termino buscado debe tener al menos 3 caracteres')
+    } else {
+        form.submit();
+    }
+})
+
+//Body
 let seccionAlbum = document.getElementById('seccionAlbum')
 let seccionArtista = document.getElementById('seccionArtista')
 let seccionCancion = document.getElementById('seccionCancion')
@@ -33,7 +49,7 @@ fetch('https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart')
         console.log(dataCharts.tracks.data[i].artist.name);
         console.log(dataCharts.tracks.data[i].artist.picture_big);
         console.log(dataCharts.tracks.data[i].id);
-        seccionCancion.innerHTML += `<article class="eleccion"><a href="detailCancion.html?id=${dataCharts.tracks.data[i].id}"><img src="${dataCharts.tracks.data[i].picture_big}" alt="${dataCharts.tracks.data[i].title}"><ul class="info"><li><h2>${dataCharts.tracks.data[i].title}</h2></li><li><p>${dataCharts.tracks.data[i].artist.name}</p></li></ul></a></article>`
+        seccionCancion.innerHTML += `<article class="eleccion"><a href="detailCancion.html?id=${dataCharts.tracks.data[i].id}"><img src="${dataCharts.tracks.data[i].album.cover_big}" alt="${dataCharts.tracks.data[i].title}"><ul class="info"><li><h2>${dataCharts.tracks.data[i].title}</h2></li><li><p>${dataCharts.tracks.data[i].artist.name}</p></li></ul></a></article>`
     }
     //Recomendaciones Artista
     for(let i=0; i<3; i++){

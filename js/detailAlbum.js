@@ -31,7 +31,7 @@ fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/album/${id}`)
 .catch(error => console.log(error))
 
 //Agregar album a favoritos
-let agregarSacar = document.getElementById('agregarSacar')
+/*let agregarSacar = document.getElementById('agregarSacar')
 let cancionesFavAlbum = []
 
 let traerCancionesAlbum = localStorage.getItem('cancionesFavAlbum')
@@ -60,4 +60,4 @@ agregarSacar.addEventListener('click', function(e){
     let cancionAlbumString = JSON.stringify(cancionesFavAlbum);
     localStorage.setItem('cancionesFavAlbum', cancionAlbumString)
     console.log(localStorage);
-})
+})*/

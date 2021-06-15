@@ -16,6 +16,7 @@ eliminarPlaylist.addEventListener('click', () => {
 
 if(arrayCancionesFav.length === 0){
     play.style.display = 'none'
+    eliminarPlaylist.style.display = 'none'
 } else {
     vacio.style.display = 'none'
 

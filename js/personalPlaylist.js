@@ -1,10 +1,18 @@
 let cancionesFavoritas = localStorage.getItem('favoritas')
-let arrayCancionesFav = JSON.parse(cancionesFavoritas)
+let arrayCancionesFav = JSON.parse(cancionesFavoritas) 
 console.log(arrayCancionesFav);
 
 let listaCanciones = document.querySelector('.playlist')
 let play = document.querySelector('.play')
 let vacio = document.getElementById('vacio')
+let eliminarPlaylist = document.querySelector('#borrarPlaylist')
+
+console.log(eliminarPlaylist)
+eliminarPlaylist.addEventListener('click', () => {
+   // e.preventDefault();
+    console.log('hola');
+    //localStorage.removeItem('favoritas')
+})
 
 if(arrayCancionesFav.length === 0){
     play.style.display = 'none'
@@ -24,28 +32,35 @@ if(arrayCancionesFav.length === 0){
                 <ul class="elegido">
                     <li><a href="detailCancion.html?id=${dataCancion.id}"><h4>${dataCancion.title}</h4></a></li>
                     <li><a href="detailAlbum.html?id=${dataCancion.album.id}">${dataCancion.album.title}</a> | <a href="detailArtista.html?id=${dataCancion.artist.id}">${dataCancion.artist.name}</a></li>
-                    <li class="borrarCancion"><a  href="#" ><i class="far fa-trash-alt"></i></a></li>
+                    <li><a class="borrarCancion" href="#" ><i class="far fa-trash-alt"></i></a></li>
                 </ul>
             </article>`
+
+            //let cancionPosicion = arrayCancionesFav.indexOf([i])
+            //console.log(cancionPosicion);
         })
-        .catch(error => console.log(error))
+        .catch(error => {console.log(error)})
     }
+
+    
+    
+
+    //let borrarCancion = document.querySelectorAll('.borrarCancion')
+    //console.log(borrarCancion);
+    
+    //borrarCancion.addEventListener('click',function(e){
+       // e.preventDefault()
+        
+   // })
 }
 
 
 
 
-/*let eliminarPlaylist = document.getElementById('eliminar')
-console.log(eliminarPlaylist);
-eliminarPlaylist.addEventListener('click', function(e){
-    e.preventDefault();
-    clear
-})
 
 
 //onclick="borrarCancion(${dataCancion.id})"
-//let borrarCancion = document.querySelectorAll('.borrarCancion')
-//console.log(borrarCancion);
+
 //borrarCancion.addEventListener('click', function(e){
 
 //function borrarCancion(id){

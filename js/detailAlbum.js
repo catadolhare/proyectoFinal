@@ -1,5 +1,6 @@
 let objetoId = new URLSearchParams(location.search);
 let id =  objetoId.get('id');
+let tituloHead = document.querySelector('title')
 let cover = document.getElementById('cover')
 let titulo = document.querySelector('h1')
 let artista = document.querySelector('h2')
@@ -17,6 +18,7 @@ fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/album/${id}`)
 .then(dataAlbum =>{
     //console.log(dataAlbum);
     cover.innerHTML = `<img src="${dataAlbum.cover_big}" alt="Album ${dataAlbum.title}"></img>`
+    tituloHead.innerHTML = `${dataAlbum.title}`
     titulo.innerHTML = `${dataAlbum.title}`
     artista.innerHTML = `<a href="detailArtista.html?id=${dataAlbum.artist.id}">${dataAlbum.artist.name}</a>`
     genero.innerHTML = `<a href="detailGenero.html?id=${dataAlbum.genres.data[0].id}">${dataAlbum.genres.data[0].name}</a>`

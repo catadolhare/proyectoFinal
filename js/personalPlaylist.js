@@ -19,10 +19,10 @@ window.addEventListener('load', function(){
     
         for(let i=0; i<arrayCancionesFav.length; i++){
             fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/track/${arrayCancionesFav[i]}`)
-            .then(respuesta =>{
+            .then(function(respuesta){
                 return respuesta.json()
             })
-            .then(dataCancion =>{
+            .then(function(dataCancion){
                // console.log(dataCancion);
                 listaCanciones.innerHTML += `
                 <article class="favorito">
@@ -35,7 +35,9 @@ window.addEventListener('load', function(){
                 </article>`
 
             })
-            .catch(error => {console.log(error)})
+            .catch(function(error){
+                console.log(error)
+            })
         }
     
         eliminarTodo.addEventListener('click', borrar())
@@ -52,19 +54,4 @@ window.addEventListener('load', function(){
             let cancionPosicion = arrayCancionesFav.indexOf();
             arrayCancionFav.splice(cancionPosicion, 1) 
         })
-    
-    
-        //borrarCancion.addEventListener('click', function(e){
-    
-        //function borrarCancion(id){
-        //console.log(id);
-        
-        //console.log(cancionPosicion);
-        
-        //}   
-    
-    
-    
-        /*console.log(localStorage);
-        */
     }})

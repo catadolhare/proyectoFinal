@@ -12,10 +12,10 @@ let player = document.getElementById('player')
 
 console.log(localStorage);
 fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/album/${id}`)
-.then(respuesta =>{
+.then(function(respuesta){
     return respuesta.json()
 })
-.then(dataAlbum =>{
+.then(function(dataAlbum){
     //console.log(dataAlbum);
     cover.innerHTML = `<img src="${dataAlbum.cover_big}" alt="Album ${dataAlbum.title}"></img>`
     tituloHead.innerHTML = `${dataAlbum.title}`
@@ -30,5 +30,6 @@ fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/album/${id}`)
     duracion.innerHTML += `${dataAlbum.duration} segundos`
     player.innerHTML = `<iframe title="deezer-widget" src="https://widget.deezer.com/widget/dark/album/${dataAlbum.id}" width="100%" height="300" frameborder="0" allowtransparency="true" allow="encrypted-media; clipboard-write"></iframe>`
 })
-.catch(error => console.log(error))
-
+.catch(function(error){
+    console.log(error)
+})

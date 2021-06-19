@@ -34,10 +34,10 @@ let recomAlbum = document.getElementById('recomAlbum')
 let recomCancion = document.getElementById('recomCancion')
 
 fetch('https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart')
-.then(respuesta =>{
+.then(function(respuesta){
     return respuesta.json()
 })
-.then(dataCharts =>{
+.then(function(dataCharts){
     //console.log(dataCanciones);
     //Albumes
     for(let i=0; i<5; i++){
@@ -76,4 +76,6 @@ fetch('https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart')
         recomCancion.innerHTML += `<article class="rec"><a href="detailCancion.html?id=${dataCharts.tracks.data[i].id}"><img src="${dataCharts.tracks.data[i].album.cover_big}" alt="${dataCharts.tracks.data[i].artist.name}"><h3>${dataCharts.tracks.data[i].title}</h3></a></article>`
     }
 })
-.catch(error => console.log(error))
+.catch(function(error){
+    console.log(error)
+})

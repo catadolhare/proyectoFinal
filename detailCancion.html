@@ -21,6 +21,7 @@
             <nav class="buscador">
                 <form action="searchResults.html" method="GET" class="formulario">
                     <input type="text" name="buscar" id="buscar" placeholder="Buscar">
+                    <button type="submit"><i class="fas fa-search"></i></button>
                 </form>
             </nav>
             <article class="menu">
@@ -98,9 +99,10 @@
                     <input type="text" name="buscar" id="buscar" placeholder="Buscar">
                 </form>
             </nav>
-            <figure class="logoFooter">
-                <a href="index.html"><img src="img/logoMusicWave.png" alt="Music Wave"></a>
-            </figure>
+            <form id="formFooter" action="searchResults.html" method="GET" class="formulario">
+                <input id="inputFooter" type="text" name="buscar" id="buscar" placeholder="Buscar">
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </form>
         </footer>
     </main>
     <script src="js/detailCancion.js"></script>  

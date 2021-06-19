@@ -8,10 +8,10 @@ let album = document.getElementById('album')
 let player = document.getElementById('player')
 
 fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/track/${id}`)
-.then(respuesta =>{
+.then(function(respuesta){
     return respuesta.json()
 })
-.then(dataCancion =>{
+.then(function(dataCancion){
     cover.innerHTML = `<img src="${dataCancion.album.cover_big}" alt="Album ${dataCancion.album.title}"></img>`
     tituloHead.innerHTML = dataCancion.title
     titulo.innerHTML = dataCancion.title
@@ -19,7 +19,9 @@ fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/track/${id}`)
     album.innerHTML = `<a href="detailAlbum.html?id=${dataCancion.album.id}">${dataCancion.album.title}</a>`
     player.innerHTML = `<iframe title="deezer-widget" src="https://widget.deezer.com/widget/dark/track/${dataCancion.id}" width="100%" height="300" frameborder="0" allowtransparency="true" allow="encrypted-media; clipboard-write"></iframe>`
 })
-.catch(error => console.log(error))
+.catch(function(error){
+    console.log(error)
+})
 
 //Agregar cancion a favoritos
 let agregarSacar = document.getElementById('agregarSacar')

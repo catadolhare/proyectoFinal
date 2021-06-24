@@ -23,18 +23,7 @@ fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/artist/${id}`)
 .catch(error => console.log(error))
 
 
-// NOMBRE DE LA CANCION Y VIDEO DE LA CANCION, lo estoy terminado
-fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/artist/${id}/top`)
-.then(respuesta => {
-    return respuesta.json()
-})
-.then(detallecancion => {
-    console.log(detallecancion);
-    fila3 += 
 
-    
-})
-.catch(error => console.log(error))
 
 
 // ALBUM DESTACADO DEL ARTISTA Y EL NOMBRE DEL ALBUM  , aca tengo el problema!

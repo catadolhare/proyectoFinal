@@ -24,7 +24,12 @@
     display: flex; 
 }
 .fotopop{
-   width: auto;
+   width: 80%;
+   height: 550px;
+}
+.izquierda{
+    display: flex;
+    justify-content: center;
 }
 .derecha{
     text-align: center;

@@ -5,35 +5,52 @@
 }
    
 .section{
-        background-image: url(../img/cropped-Harry-Styles.jpg); 
+        
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 700px; 
+        padding:2%;
+    }
+    .imagendeartista{
+       width: 70%;
+    }
+    .detallesdeartista{
+        width: 40%;
+    }
+    .foto{
         background-repeat: no-repeat;
         background-size: cover; 
-        width: 100%;
-        height: 600px; 
+        width: 600px;
+        height: 400px; 
         padding:2%;
+        
     }
      
  .section2{
        display: flex;
        flex-direction: column; 
-       width: 50%; 
+       width: 100%; 
        height: 600px;
       justify-content: center;
+     
   }
         
  .fila1{
          display: flex;
-         width:400px;  
-         justify-content: center; 
+         width:100%;
          background-color: rgba(255, 255, 255, 0.274); 
+
  }
   .fila2{
         display: flex;
         flex-direction: row;
+       
     }
 
 .fila3{
         display: flex;
+       
    }
  .fila4{ 
         display: flex;
@@ -42,8 +59,9 @@
      } 
     
  .nombre{
-         margin: 20px;
-        font-size: 40px; 
+        margin: 20px;
+        font-size: 100px; 
+        
     }
 .article1{
         background-color: rgba(255, 255, 255, 0.274);
@@ -60,15 +78,18 @@
         flex-direction: column;
         justify-content: center; 
         margin: 20px; 
+        
     }
   
   .article3{ display: flex;
         flex-direction: column;
         justify-content: center;
+       
     }
         
     .article4{
-       margin: 20px;      
+       margin: 20px; 
+       background-color: ;     
     }
    .article5{
        display: flex;
@@ -87,7 +108,8 @@
     }
     
     .imagendeharry{
-        width: 100%;  
+        width: 80px; 
+        margin: auto; 
     }
 
     .article7{
@@ -95,7 +117,9 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        width: 70%; 
+        width: 90%; 
+        margin: 10px;
+           
 
     }
    h6{ color: rgba(255, 255, 255, 0.747);

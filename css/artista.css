@@ -13,10 +13,30 @@
         padding:2%;
     }
     .imagendeartista{
-       width: 70%;
+       width: 60%;
+       height: 600px;
+       display: flex;
+       justify-content: center;
+       
+    }
+    .primerafila{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 30px;
+        text-align: center;
+        color: white;
+        background-color:  rgba(255, 255, 255, 0.274);
+        
+        
+    }
+    .fotoart{
+        margin: 0 40px;
+        width: 80%;
+        height: 600px;
+        
     }
     .detallesdeartista{
         width: 40%;
+        
     }
     .foto{
         background-repeat: no-repeat;
@@ -54,9 +74,19 @@
    }
  .fila4{ 
         display: flex;
-        width: 50%;
+        width: 70%;
         justify-content: space-between;
      } 
+ .albumH{
+        width: 70%;
+        height: 100%;
+        margin: 2% 0;
+        
+        }
+        .fotoalbumH{
+            width: 100%;
+            height: 150px;
+        }
     
  .nombre{
         margin: 20px;
@@ -99,13 +129,7 @@
  }
     
     
- .albumH{
-       width: 30%;
-       height: 40%;
-       margin: 2% 0;
-       
-       
-    }
+
     
     .imagendeharry{
         width: 80px; 
@@ -124,17 +148,21 @@
     }
    h6{ color: rgba(255, 255, 255, 0.747);
        margin: 5px 0px;
+       font-size: 20px;
    }
    h3{
        font-size: 30px;
        color: white;
+       font-size: 15px;
    }
    h4{
        margin: 5px 0px;
        color: white;
+       font-size: 20px;
    }
    h5{  color: rgba(255, 255, 255, 0.747);
        margin: 5px 0px;
+       font-size: 15px;
 
    }
    .F:hover{
@@ -148,13 +176,7 @@
     height: 500px;
 }
 
-.bio1{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 40%;
-    
-}
+
 .tituloss{
     text-align: center;
     background-color: rgb(46, 46, 46);
@@ -179,7 +201,8 @@ font-size: 40px;
 
 .bio2{
     margin: 0;
-    width: 60%; 
+    width: 100%; 
+    
    }
 
 .segundafila{

@@ -5,7 +5,7 @@ h3{
 .contenido{
     display: flex;
     align-items: center;
-    height: 88%;
+    height: 700px;
 } 
 
 .columna1{
@@ -18,20 +18,25 @@ h3{
     margin: 0 10%;  
 }
 .columna2{
-    width: 65%;
+    width: 50%;
+    height: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    margin: 2%;
   }
-
-.genero1{
-    background-image: url(../img/Pop.jpg);
+.fotogenero{
+    background-color: white;
     background-position: center;  
     width: 200px;
     height: 200px; 
    text-align: center;
-   margin: 2%;
+  
+}
+/*.genero1{
+    background-image: url(../img/Pop.jpg);
+    
 }
 
 .genero2{
@@ -77,11 +82,14 @@ h3{
     height: 200px; 
     text-align: center;
     margin: 2%;
-}
+}*/
 
-h3{
-    background-color: whitesmoke;
-    border-radius: 150px;
+.h3{
+    color:black;
+   font-size: 30px;
+    text-align:justify;
+    
+    
 }
 
 .musica{

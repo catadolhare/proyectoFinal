@@ -10,6 +10,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow&family=Bebas+Neue&family=Lato:wght@300&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="stylesheet" href="css/searchResults.css">
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
 </head>
 <body>
     <main class="container">
@@ -19,16 +21,27 @@
                     <img src="img/logoMusicWave.png" alt="Logo Music Wave">
                 </a>
             </figure>
-            <h1 class="titulo"> Resultados de busqueda para : </h1>
+            <nav class="buscador">
+                <form action="searchResults.html" method="GET" class="formulario">
+                    <input type="text" name="buscar" id="buscar" placeholder="Buscar">
+                    <button type="submit"><i class="fas fa-search"></i></button>
+                </form>
+            </nav>
+            <article class="menu">
+                <ul class="opciones">
+                    <li><a href="generos.html">Géneros</a></li>
+                    <li><a href="personalPlaylist.html">Mi Playlist</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="registrarse.html">Registrarse</a></li>
+                </ul>
+            </article>
+        </header>
+        <main>
+            <h1 class="titulogonchy"> Resultados de búsqueda </h1>
             <section class="resultados">
-        
+
             </section>
-            <form action="search.html" method="GET">
-                <input type="search" name="buscar" placeholder="Buscar...">
-                <button type="submit">
-                    <h2><ion-icon name="search-outline"></ion-icon></h2>
-                </button>
-            </form>
+        </main>
 
           <!--  <nav class="buscador">
                 <form action="searchResults.html" method="GET" class="formulario">
@@ -74,9 +87,11 @@
                     </form>
                 </nav>
                 <figure class="logoFooter">
-                    <a href="index.html"><img src="img/logoMusicWave.png" alt="Music Wave"></a>
+                  <a href="index.html"><img src="img/logoMusicWave.png" alt="Music Wave"></a>
                 </figure>
             </footer>-->
+            
     </main>
+    <script src="js/searchResults.js"></script>
 </body>
 </html>

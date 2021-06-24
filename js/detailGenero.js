@@ -18,7 +18,7 @@ fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/genre/${id}`)
      </article>
      <article class="izquierda">
      <img src="${datatitulogenero.picture_big} " alt="pop" class="fotopop" 
-     </article> -->`
+     </article> `
   })
   .catch(error => console.log(error))
 
@@ -31,7 +31,7 @@ fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/genre/${id}/ar
 .then(datageneroartista =>{
     console.log(datageneroartista);
     for(i=0 ; i< 9 ; i++){
-        favoritos.innerHTML += `<article class = "fav"><a href="detailArtista.html?id=${datageneroartista.data[i].id}" <h3 class="fav:hover"> ${datageneroartista.data[i].name}  </h3> > <img src = "${datageneroartista.data[i].picture}"  </article>`
+        favoritos.innerHTML += `<article class = "fav"><a href="detailArtista.html?id=${datageneroartista.data[i].id}" <h3 class="fav:hover"> ${datageneroartista.data[i].name}  </h3> <img src = "${datageneroartista.data[i].picture}"  </article>`
     }
     })
 

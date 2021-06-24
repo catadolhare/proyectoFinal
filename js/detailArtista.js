@@ -52,9 +52,7 @@ fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/artist/${id}/t
 })
 .then(cancionartista => {
     for(let i=0 ; i<1 ; i++){
-        fila3.innerHTML  += ` <article class="article4">
-        <iframe width="200" height="140" src="https://www.deezer.com/track/${cancionartista.data[0].link}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-       </article>
+        fila3.innerHTML  += ` <
        <article class="article5">
         <h5> Popular esta semana</h5>
         <a href="detailCancion.html?id=${cancionartista.data[0].id}"><h4 class="F">${cancionartista.data[0].title}</h4></a>
@@ -93,7 +91,7 @@ fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/artist/${id}/t
 })
 
 .then(topcinco => {
-    
+    console.log(topcinco);
     //console.log(topcinco.data);
     //console.log(topcinco.data +'------');
    for( let i=0 ; i<7; i++){ 
@@ -101,7 +99,7 @@ fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/artist/${id}/t
         <a href="detailCancion.html?id=${topcinco.data[i].id}">
             <img src="${topcinco.data[i].picture}" alt="${topcinco.data[i].name}" class="imagencancion">
             <ul class="informacion">
-                <li><h3>${topcinco.data[i].name}h3></li>
+                <li><h3>${topcinco.data[i].name}</h3></li>
             </ul>
         </a>
     </article>`

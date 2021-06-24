@@ -1,11 +1,13 @@
 let busqueda = new URLSearchParams(location.search) /* CAPTURO New URLSearchParams me trae los datos de mejor manera - con location.search mandando a buscar lo que typeo el usuario- Aca tengo lo que el usuario typeo */
-let buscar = busqueda.get('buscar') /* OBTENGO EL DATO Extraigo lo que el usuario typeo*/
+let buscar = busqueda.get('buscar')
+ /* OBTENGO EL DATO Extraigo lo que el usuario typeo*/
+ console.log(buscar);
 let resultados = document.querySelector('.resultados')
 let contenido = ''
-let titulo = document.querySelector('.titulo')
+let titulo = document.querySelector('.titulogonchy')
 
 titulo.innerHTML += buscar
-titulo.classList.add('tituloBusqueda')
+//titulo.classList.add('tituloBusqueda')
 
 
 
@@ -14,8 +16,8 @@ fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/search?q=${bus
 .then(respuesta =>{
    return respuesta.json()
 })
-.then(dataBusqueda =>{ /en dataBusqueda estan los datos/
-   console.log(dataBusqueda);
+.then(dataBusqueda =>{ //en dataBusqueda estan los datos/
+ console.log(dataBusqueda);
    for(let i=0; i < dataBusqueda.data.length; i++){
        contenido += `<article class="contenido2">
                         <p class="titulosCanciones"><a href="detail-track.html?id=${dataBusqueda.data[i].id}"> ${dataBusqueda.data[i].title} </a></p>

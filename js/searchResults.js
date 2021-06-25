@@ -46,7 +46,7 @@ fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/search?q=${bus
  console.log(dataBusqueda);
    for(let i=0; i < dataBusqueda.data.length; i++){
        contenido += `<article class="contenido2">
-                        <p class="Resultados"><a href="detailCancion.html?id=${dataBusqueda.data[i].id}"> ${dataBusqueda.data[i].title} </a></p>
+                        <p class="Resultados"><a class="F" href="detailCancion.html?id=${dataBusqueda.data[i].id}"> ${dataBusqueda.data[i].title} </a></p>
                     </article>`
    }
    resultados.innerHTML += contenido

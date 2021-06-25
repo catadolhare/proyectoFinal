@@ -25,6 +25,7 @@ formFooter.addEventListener('submit', function(e){
     }
 })
 
+// Resultado de Busqueda
 let busqueda = new URLSearchParams(location.search) 
 let buscar = busqueda.get('buscar')
  console.log(buscar);
@@ -33,8 +34,6 @@ let contenido = ''
 let titulo = document.querySelector('.titulob')
 
 titulo.innerHTML += buscar
-
-
 
 
 
@@ -49,7 +48,7 @@ fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/search?q=${bus
                         <p class="Resultados"><a class="F" href="detailCancion.html?id=${dataBusqueda.data[i].id}"> ${dataBusqueda.data[i].title} </a></p>
                     </article>`
    }
-   resultados.innerHTML += contenido
+    resultados.innerHTML += contenido
    if(dataBusqueda.data.length == 0){
       alert('La busqueda no trajo resultados')
    }

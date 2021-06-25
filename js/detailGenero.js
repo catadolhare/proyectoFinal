@@ -25,21 +25,21 @@ formFooter.addEventListener('submit', function(e){
     }
 })
 
-let objetoId = new URLSearchParams(location.search); // ahi estoy atrapando el id del genero anterior
-let id =  objetoId.get('id'); // para traerlo y que lo muestre pongo id 
-let detallegenero = objetoId.get('genre');
-let favoritos = document.querySelector('.favoritos')
+// Detalle Genero 
+let objetoId = new URLSearchParams(location.search);  
+let id =  objetoId.get('id'); 
+let favoritos = document.querySelector('.favoritos') 
 let titulo = document.querySelector('.pop')
 
 
 
-fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/genre/${id}`)
-.then(respuesta => {
-    return respuesta.json();
+fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/genre/${id}`) 
+.then(respuesta => { // hice la estructura de fetch que empieza con una promesa que es then. declaro la funcion es un bloque de código reutilizable que realiza una tarea especifica y retorna un valor. 
+    return respuesta.json();  // me retorna una respues
  })
  .then(datatitulogenero=>{
-    console.log(datatitulogenero);
-    titulo.innerHTML += 
+    //console.log(datatitulogenero);
+    titulo.innerHTML = 
    ` <article class="derecha">
     <h2 class="titulopop">${datatitulogenero.name}</h2> 
      </article>
@@ -56,9 +56,9 @@ fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/genre/${id}/ar
     return respuesta.json();
 })
 .then(datageneroartista =>{
-    console.log(datageneroartista);
+    //console.log(datageneroartista);
     for(i=0 ; i< 9 ; i++){
-        favoritos.innerHTML += `<article class = "fav"><a href="detailArtista.html?id=${datageneroartista.data[i].id}" <h3 class="fav:hover"> ${datageneroartista.data[i].name}  </h3> <img src = "${datageneroartista.data[i].picture}"  </article>`
+        favoritos.innerHTML += `<article class ="fav"><a href="detailArtista.html?id=${datageneroartista.data[i].id}" <h3 class="fav:hover"> ${datageneroartista.data[i].name}  </h3> <img src = "${datageneroartista.data[i].picture}"  </article>`
     }
     })
 

@@ -1,14 +1,14 @@
 //Buscador
 let form = document.querySelector('form')
-let buscar = document.querySelector('[name=buscar]')
+let buscarform = document.querySelector('[name=buscar]')
 let formFooter = document.querySelector('#formFooter')
 let buscarFooter = document.querySelector('#inputFooter')
 
 form.addEventListener('submit', function(e){
     e.preventDefault();
-    if(buscar.value === ''){
+    if(buscarForm.value === ''){
         alert('El buscador no puede estar vacio')
-    } else if(buscar.value.length < 3) {
+    } else if(buscarForm.value.length < 3) {
         alert('El termino buscado debe tener al menos 3 caracteres')
     } else {
         form.submit();

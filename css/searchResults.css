@@ -1,13 +1,10 @@
 .noresults{
     display: none;
 }
-/*h1{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+h1{
+    color: white;
 }
-.generopop{
+/*.generopop{
     flex-wrap: wrap;
     flex-direction: row;
     align-items: center;

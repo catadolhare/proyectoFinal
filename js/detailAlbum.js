@@ -27,6 +27,7 @@ formFooter.addEventListener('submit', function(e){
 
 let objetoId = new URLSearchParams(location.search);
 let id =  objetoId.get('id');
+
 let tituloHead = document.querySelector('title')
 let cover = document.getElementById('cover')
 let titulo = document.querySelector('h1')

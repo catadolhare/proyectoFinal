@@ -60,7 +60,7 @@ if(traerCancionesFavoritas != null){
     cancionesFavoritas = JSON.parse(traerCancionesFavoritas) //Si hay algo, lo convierte en un array en cancionesFavoritas
 }
 
-if(cancionesFavoritas.includes(id)){ //Si ingluy el id, cambia el boton para eliminar de playlist
+if(cancionesFavoritas.includes(id)){ //Si incluye el id, cambia el boton para eliminar de playlist
     agregarSacar.innerHTML = 'Eliminar de mi playlist'
 }
 

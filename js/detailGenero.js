@@ -38,7 +38,7 @@ fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/genre/${id}/ar
 
 .catch(error => console.log(error))
 
-//favoritos.innerHTML += `<article class = "fav"><a href="detailArtista.html?id=${datageneroartista.data[0].id}" <h3 class="fav:hover"> ${datageneroartista.data[i].name}  </h3> > <img src = "${datageneroartista.data[i].picture}"  </article>`
+
 
 
 

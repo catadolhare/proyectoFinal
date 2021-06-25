@@ -1,8 +1,4 @@
-
 let columna2 = document.querySelector('.columna2')
-
-
-
 
 
 fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/genre`)
@@ -17,11 +13,6 @@ fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/genre`)
     }
 
 })
-
-   
-    
-    
-
 
 .catch(error => console.log(error))
     

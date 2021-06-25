@@ -31,9 +31,6 @@ for(let i=0 ; i<1; i++){
 }
 })
 
-
-
-//NOMBRE DEL ARTISTA  Y FOTO, terminado. SI anda
 fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/artist/${id}`)
 .then(respuesta => {
     return respuesta.json()
@@ -59,7 +56,7 @@ fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/artist/${id}/t
         <h5> ${cancionartista.data[0].rank} Listeners</h5>
        </article>`
     }
-    console.log(cancionartista); // Me devuelve bien los datos 
+    console.log(cancionartista); 
     
    } )
 .catch(error => console.log(error))
@@ -90,6 +87,7 @@ fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/artist/${id}/t
     return respuesta.json()
 })
 
+// Indefinido
 .then(topcinco => {
     console.log(topcinco);
     //console.log(topcinco.data);

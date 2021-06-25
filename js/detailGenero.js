@@ -1,3 +1,30 @@
+//Buscador
+let form = document.querySelector('form')
+let buscar = document.querySelector('[name=buscar]')
+let formFooter = document.querySelector('#formFooter')
+let buscarFooter = document.querySelector('#inputFooter')
+
+form.addEventListener('submit', function(e){
+    e.preventDefault();
+    if(buscar.value === ''){
+        alert('El buscador no puede estar vacio')
+    } else if(buscar.value.length < 3) {
+        alert('El termino buscado debe tener al menos 3 caracteres')
+    } else {
+        form.submit();
+    }
+})
+formFooter.addEventListener('submit', function(e){
+    e.preventDefault();
+    if(buscarFooter.value === ''){
+        alert('El buscador no puede estar vacio')
+    } else if(buscarFooter.value.length < 3) {
+        alert('El termino buscado debe tener al menos 3 caracteres')
+    } else {
+        formFooter.submit();
+    }
+})
+
 let objetoId = new URLSearchParams(location.search); // ahi estoy atrapando el id del genero anterior
 let id =  objetoId.get('id'); // para traerlo y que lo muestre pongo id 
 let detallegenero = objetoId.get('genre');

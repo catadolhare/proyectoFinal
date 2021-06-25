@@ -25,7 +25,7 @@ formFooter.addEventListener('submit', function(e){
     }
 })
 
-//Body
+//Index
 let seccionAlbum = document.getElementById('seccionAlbum')
 let seccionArtista = document.getElementById('seccionArtista')
 let seccionCancion = document.getElementById('seccionCancion')

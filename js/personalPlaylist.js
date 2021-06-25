@@ -25,8 +25,8 @@ formFooter.addEventListener('submit', function(e){
     }
 })
 
-let cancionesFavoritas = localStorage.getItem('favoritas')
-let arrayCancionesFav = JSON.parse(cancionesFavoritas) 
+let cancionesFavoritas = localStorage.getItem('favoritas') //Bajamos la informacion del localStorage
+let arrayCancionesFav = JSON.parse(cancionesFavoritas)  //Lo convertimos en un array (informacion esta en string)
 console.log(arrayCancionesFav);
     
 let listaCanciones = document.querySelector('.playlist')
@@ -36,11 +36,11 @@ let eliminarTodo = document.querySelector('.eliminar')
 console.log(eliminarTodo)
 
 console.log(arrayCancionesFav)
-if(arrayCancionesFav === null){
+if(arrayCancionesFav === null){ //Si el array esta vacio, no se mostrara el boton de play ni de eliminar
     play.style.display = 'none'
     eliminarTodo.style.display = 'none'
 } else {
-    vacio.style.display = 'none'
+    vacio.style.display = 'none' //Si no, no se muestra el article con class vacio y se recorre el array con los ids de las canciones favoritas
     
     for(let i=0; i<arrayCancionesFav.length; i++){
         fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/track/${arrayCancionesFav[i]}`)
